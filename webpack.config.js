@@ -53,18 +53,8 @@ module.exports = {
       directory: path.resolve(__dirname, "build"),
     },
     host: "0.0.0.0",
-    port: 5004,
+    port: 5007,
     historyApiFallback: true,
   },
-  plugins: [
-    new HtmlWebpackPlugin({ template: "./src/assets/index.html" }),
-    new CopyPlugin({
-      patterns: [
-        { from: "./src/assets/img/favicon", to: "./favicon" },
-        { from: "./src/assets/robots.txt", to: "./" },
-        { from: "./src/assets/sitemap.xml", to: "./" },
-        { from: "./src/assets/pdf/", to: "./pdf" },
-      ],
-    }),
-  ],
+  plugins: [new HtmlWebpackPlugin({ template: "./src/assets/index.html" })],
 };
