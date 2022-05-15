@@ -8,7 +8,7 @@ module.exports = {
     extensions: [".js", ".jsx"],
   },
 
-  entry: ["./src/index.js"],
+  entry: ["./src/index.jsx"],
   output: {
     filename: "[name].[contenthash].app.js",
     path: path.resolve(__dirname, "build"),
