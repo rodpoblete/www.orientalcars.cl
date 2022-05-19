@@ -2,6 +2,8 @@ import React from "react";
 
 import Grid from "@mui/material/Grid";
 
+import CardCard from "../CarCard/index";
+
 export default function Home() {
   return (
     <>
@@ -12,7 +14,7 @@ export default function Home() {
       </Grid>
       <Grid container alignItems="center">
         <Grid item xs={12} align="center">
-          Componente 2
+          <CardCard />
         </Grid>
       </Grid>
     </>
