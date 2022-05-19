@@ -5,7 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 
-import car1 from "../../../assets/img/car1.jpeg";
+import car1 from "../../../assets/img/car1.webp";
 
 export default function MultiActionAreaCard() {
   return (
