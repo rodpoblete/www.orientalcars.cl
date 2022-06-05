@@ -51,8 +51,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-const StyledLogo = styled("img")(() => ({
-  // TODO: Add breakpoint for logo to responsive view. For now, it's just a static image.
+export const StyledLogo = styled("img")(() => ({
   maxWidth: 100,
 }));
 
