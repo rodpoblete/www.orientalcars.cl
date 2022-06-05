@@ -4,6 +4,11 @@ import Typography from "@mui/material/Typography";
 // this comment tells babel to convert jsx to calls to a function called jsx instead of React.createElement
 /** @jsx jsx */
 import { css, jsx } from "@emotion/react";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import { Icon } from "@mui/material";
+import { StyledLogo } from "../Header/index";
+import logo from "../../../assets/img/logo_min_small.svg";
 
 const cssTitle = css({
   padding: "16px",
@@ -34,18 +39,27 @@ const cssFooter = (theme) =>
 export default function Footer() {
   return (
     <Grid container justifyContent="center" css={cssWrapper}>
-      <Grid container alignItems="flex-start" css={cssFooter}>
-        <Grid item xs={12} sm={3} align="left">
-          <Typography variant="h6" component="h2" css={cssTitle}>
-            Footer
+      <Grid container alignItems="center" css={cssFooter}>
+        <Grid item xs={12} sm={3} align="center">
+          <StyledLogo src={logo} alt="logo" />
+        </Grid>
+        <Grid item xs={12} sm={6} align="right">
+          {/* FIXME: Iconos y textos alineados con la misma line height */}
+          <FacebookIcon label="Orientalcars La Serena" />
+          <Typography variant="h8" css={cssTitle}>
+            Orientalcars La Serena{" "}
+          </Typography>
+          <InstagramIcon />
+          <Typography variant="h8" css={cssTitle}>
+            @Orientalcarltda{" "}
           </Typography>
         </Grid>
       </Grid>
       <Grid container css={cssBootomLine} alignContent="center">
         <Grid item xs={12} align="center">
           <Typography variant="caption" display="block" gutterBottom>
-            © {new Date().getFullYear()} Poblete – Venta de Sitios webs al
-            precio de aliexpress
+            © {new Date().getFullYear()} Oriental Cars – Automotora compra,
+            venta y consignaciones
           </Typography>
         </Grid>
       </Grid>
