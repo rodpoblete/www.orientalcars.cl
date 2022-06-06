@@ -42,7 +42,14 @@ export default function Footer() {
         <Grid item xs={12} sm={6} align="left">
           <StyledLogo src={logo} alt="logo" />
         </Grid>
-        <Grid item xs={12} sm={6} align="right">
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          display="flex"
+          alignItems="center"
+          justifyContent="end"
+        >
           <FacebookIcon label="Orientalcars La Serena" />
           <Typography variant="h8" css={cssTitle}>
             Orientalcars La Serena{" "}
