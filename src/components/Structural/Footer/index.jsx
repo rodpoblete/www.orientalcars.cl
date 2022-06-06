@@ -6,7 +6,6 @@ import Typography from "@mui/material/Typography";
 import { css, jsx } from "@emotion/react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import { Icon } from "@mui/material";
 import { StyledLogo } from "../Header/index";
 import logo from "../../../assets/img/logo_min_small.svg";
 
@@ -40,11 +39,10 @@ export default function Footer() {
   return (
     <Grid container justifyContent="center" css={cssWrapper}>
       <Grid container alignItems="center" css={cssFooter}>
-        <Grid item xs={12} sm={3} align="center">
+        <Grid item xs={12} sm={6} align="left">
           <StyledLogo src={logo} alt="logo" />
         </Grid>
         <Grid item xs={12} sm={6} align="right">
-          {/* FIXME: Iconos y textos alineados con la misma line height */}
           <FacebookIcon label="Orientalcars La Serena" />
           <Typography variant="h8" css={cssTitle}>
             Orientalcars La Serena{" "}
