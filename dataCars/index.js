@@ -1,6 +1,6 @@
-exports.cars = [
+exports.dataCars = [
   {
-    id: "001",
+    id: 1,
     name: "HYUNDAI GRAND I10 2022",
     year: 2022,
     brand: "Hyundai",
@@ -17,7 +17,7 @@ exports.cars = [
     keys: 1,
   },
   {
-    id: "002",
+    id: 2,
     name: "SUZUKI S-PRESSO GLX 2021",
     year: 2021,
     brand: "Susuki",
@@ -34,7 +34,7 @@ exports.cars = [
     keys: 1,
   },
   {
-    id: "003",
+    id: 3,
     name: "SUZUKI ALTO 2022",
     year: 2022,
     brand: "Susuki",
@@ -51,7 +51,7 @@ exports.cars = [
     keys: 2,
   },
   {
-    id: "004",
+    id: 4,
     name: "HYUNDAI GRAND I10 2019",
     year: 2019,
     brand: "Hyundai",
@@ -68,7 +68,7 @@ exports.cars = [
     keys: 2,
   },
   {
-    id: "005",
+    id: 5,
     name: "SUZUKI GLS BALENO 2022",
     year: 2022,
     brand: "Susuki",
@@ -85,7 +85,7 @@ exports.cars = [
     keys: 2,
   },
   {
-    id: "006",
+    id: 6,
     name: "TOYOTA RAIZE 2022",
     year: 2022,
     brand: "Toyota",
@@ -102,7 +102,7 @@ exports.cars = [
     keys: 2,
   },
   {
-    id: "007",
+    id: 7,
     name: "CHEVROLET ONIX RS 2022",
     year: 2022,
     brand: "Chevrolet",
