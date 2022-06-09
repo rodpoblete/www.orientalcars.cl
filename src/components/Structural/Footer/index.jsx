@@ -7,7 +7,7 @@ import { css, jsx } from "@emotion/react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { StyledLogo } from "../Header/index";
-import logo from "../../../assets/img/logo_min_small.svg";
+import logo from "../../../assets/img/logo/logo_min_small.svg";
 
 const cssTitle = css({
   padding: "16px",

@@ -5,7 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 
-import car1 from "../../../assets/img/car1.webp";
+import car1 from "../../../assets/img/cars/chevrolet-onix-2022.webp";
 
 export default function MultiActionAreaCard() {
   return (
@@ -13,9 +13,9 @@ export default function MultiActionAreaCard() {
       <CardActionArea>
         <CardMedia
           component="img"
-          height="140"
+          height="180"
           image={car1}
-          alt="green iguana"
+          alt="car portrait"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
