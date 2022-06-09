@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 
-import logo from "../../../assets/img/logo_min.svg";
+import logo from "../../../assets/img/logo/logo_min.svg";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
