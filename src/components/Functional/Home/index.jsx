@@ -8,9 +8,7 @@ export default function Home() {
   return (
     <>
       <Grid container alignItems="center">
-        <Grid item xs={12} align="center">
-          Componente 1
-        </Grid>
+        <Grid item xs={12} align="center"></Grid>
       </Grid>
       <Grid container alignItems="center">
         <Grid item xs={12} align="center">

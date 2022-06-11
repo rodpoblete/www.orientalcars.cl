@@ -1,6 +1,15 @@
+const chevroletOnix = require("../src/assets/img/cars/chevrolet-onix-2022.webp");
+const hyundaiGrand22 = require("../src/assets/img/cars/hyundai-grand-1-10-2022.webp");
+const hyundaiGrand19 = require("../src/assets/img/cars/hyundai-grandi10-2019.webp");
+const susukiAlto = require("../src/assets/img/cars/susuki-alto-2022.webp");
+const susukiBaleno = require("../src/assets/img/cars/susuki-baleno-gls-2022.webp");
+const susukiSpresso = require("../src/assets/img/cars/susuki-spresso-glx-2021.webp");
+const toyotaRaize = require("../src/assets/img/cars/toyota-raize-2022.webp");
+
 exports.dataCars = [
   {
     id: 1,
+    photo: hyundaiGrand22,
     name: "HYUNDAI GRAND I10 2022",
     year: 2022,
     brand: "Hyundai",
@@ -18,6 +27,7 @@ exports.dataCars = [
   },
   {
     id: 2,
+    photo: susukiSpresso,
     name: "SUZUKI S-PRESSO GLX 2021",
     year: 2021,
     brand: "Susuki",
@@ -35,6 +45,7 @@ exports.dataCars = [
   },
   {
     id: 3,
+    photo: susukiAlto,
     name: "SUZUKI ALTO 2022",
     year: 2022,
     brand: "Susuki",
@@ -52,6 +63,7 @@ exports.dataCars = [
   },
   {
     id: 4,
+    photo: hyundaiGrand19,
     name: "HYUNDAI GRAND I10 2019",
     year: 2019,
     brand: "Hyundai",
@@ -69,6 +81,7 @@ exports.dataCars = [
   },
   {
     id: 5,
+    photo: susukiBaleno,
     name: "SUZUKI GLS BALENO 2022",
     year: 2022,
     brand: "Susuki",
@@ -86,6 +99,7 @@ exports.dataCars = [
   },
   {
     id: 6,
+    photo: toyotaRaize,
     name: "TOYOTA RAIZE 2022",
     year: 2022,
     brand: "Toyota",
@@ -103,6 +117,7 @@ exports.dataCars = [
   },
   {
     id: 7,
+    photo: chevroletOnix,
     name: "CHEVROLET ONIX RS 2022",
     year: 2022,
     brand: "Chevrolet",
