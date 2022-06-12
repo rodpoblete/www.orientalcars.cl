@@ -8,11 +8,6 @@ import { dataCars } from "../../../../dataCars";
 
 export default function Home() {
   return (
-    // <Grid container alignItems="center">
-    //   <Grid item xs={12} align="center">
-    //     <CardCard />
-    //   </Grid>
-    // </Grid>
     <Grid container spacing={2} justifyContent="center" maxWidth="md">
       {dataCars.map((car) => (
         <CardCard
