@@ -6,15 +6,8 @@ import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import Grid from "@mui/material/Grid";
 
-export default function MultiActionAreaCard({
-  photo,
-  name,
-  year,
-  brand,
-  model,
-  price,
-  type,
-}) {
+export default function CarCard({ carData }) {
+  const { photo, name, year, brand, model, type, price } = carData;
   return (
     <Grid item sx={4} sm={4} md={3}>
       <Card sx={{ maxWidth: 345 }}>
