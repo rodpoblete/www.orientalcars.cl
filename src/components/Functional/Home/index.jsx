@@ -2,21 +2,16 @@ import React from "react";
 
 import Grid from "@mui/material/Grid";
 
-import CardCard from "../CarCard/index";
+import CarCard from "../CarCard/index";
+
+import { dataCars } from "../../../../dataCars";
 
 export default function Home() {
   return (
-    <>
-      <Grid container alignItems="center">
-        <Grid item xs={12} align="center">
-          Componente 1
-        </Grid>
-      </Grid>
-      <Grid container alignItems="center">
-        <Grid item xs={12} align="center">
-          <CardCard />
-        </Grid>
-      </Grid>
-    </>
+    <Grid container spacing={2} justifyContent="center" maxWidth="md">
+      {dataCars.map((car) => (
+        <CarCard key={car.id} carData={car} />
+      ))}
+    </Grid>
   );
 }
