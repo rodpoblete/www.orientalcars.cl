@@ -17,9 +17,11 @@ import Home from "../../Functional/Home";
 
 const cssMain = (theme) =>
   css({
-    paddingTop: "165px",
+    paddingTop: "20px",
+    paddingBottom: "20px",
     [theme.breakpoints.down("sm")]: {
-      paddingTop: "139px",
+      paddingTop: "30px",
+      paddingBottom: "30px",
     },
   });
 
