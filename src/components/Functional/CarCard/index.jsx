@@ -8,16 +8,32 @@ import Grid from "@mui/material/Grid";
 
 export default function CarCard({ carData }) {
   const { photo, name, year, brand, model, type, price } = carData;
+  const options = { style: "currency", currency: "CLP" };
+  const priceFormat = new Intl.NumberFormat("es-CL", options).format(price);
   return (
     <Grid item sx={4} sm={4} md={3}>
       <Card>
         <CardActionArea>
           <CardMedia component="img" height="180" image={photo} alt={name} />
           <CardContent sx={{ height: 180 }}>
-            <Typography gutterBottom variant="h7" component="div">
+            <Typography
+              sx={{
+                color: "text.secondary",
+                fontSize: 14,
+                fontWeight: "medium",
+                MaxHeight: 23,
+              }}
+            >
               {name}
             </Typography>
-            <Typography>PRECIO: ${price}</Typography>
+            <Typography
+              sx={{
+                color: "primary.main",
+                fontSize: 18,
+              }}
+            >
+              Precio: {priceFormat}
+            </Typography>
             <Typography variant="body2" color="text.secondary">
               ¿Buscas algún {type} nuevo? Ya disponible el {brand} {model} año{" "}
               {year}, equipamiento completo. Al contado o crédito.
