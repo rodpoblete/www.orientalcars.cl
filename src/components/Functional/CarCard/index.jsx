@@ -10,10 +10,10 @@ export default function CarCard({ carData }) {
   const { photo, name, year, brand, model, type, price } = carData;
   return (
     <Grid item sx={4} sm={4} md={3}>
-      <Card sx={{ maxWidth: 345 }}>
+      <Card>
         <CardActionArea>
           <CardMedia component="img" height="180" image={photo} alt={name} />
-          <CardContent>
+          <CardContent sx={{ height: 180 }}>
             <Typography gutterBottom variant="h7" component="div">
               {name}
             </Typography>
