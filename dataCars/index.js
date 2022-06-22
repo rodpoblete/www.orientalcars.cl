@@ -10,7 +10,7 @@ exports.dataCars = [
   {
     id: 1,
     photo: hyundaiGrand22,
-    name: "HYUNDAI GRAND I10 2022",
+    name: "Hyundai Grand I10 2022",
     year: 2022,
     brand: "Hyundai",
     model: "Grand-i10",
@@ -28,7 +28,7 @@ exports.dataCars = [
   {
     id: 2,
     photo: susukiSpresso,
-    name: "SUZUKI S-PRESSO GLX 2021",
+    name: "Suzuki S-Presso GLX 2021",
     year: 2021,
     brand: "Susuki",
     model: "S-Presso",
@@ -46,7 +46,7 @@ exports.dataCars = [
   {
     id: 3,
     photo: susukiAlto,
-    name: "SUZUKI ALTO 2022",
+    name: "Suzuki Alto 2022",
     year: 2022,
     brand: "Susuki",
     model: "Alto",
@@ -64,7 +64,7 @@ exports.dataCars = [
   {
     id: 4,
     photo: hyundaiGrand19,
-    name: "HYUNDAI GRAND I10 2019",
+    name: "Hyundai Grand I10 2019",
     year: 2019,
     brand: "Hyundai",
     model: "Grand-i10",
@@ -82,7 +82,7 @@ exports.dataCars = [
   {
     id: 5,
     photo: susukiBaleno,
-    name: "SUZUKI GLS BALENO 2022",
+    name: "Suzuki GLS Baleno 2022",
     year: 2022,
     brand: "Susuki",
     model: "Baleno",
@@ -100,7 +100,7 @@ exports.dataCars = [
   {
     id: 6,
     photo: toyotaRaize,
-    name: "TOYOTA RAIZE 2022",
+    name: "Toyota Raize 2022",
     year: 2022,
     brand: "Toyota",
     model: "Raize",
@@ -118,7 +118,7 @@ exports.dataCars = [
   {
     id: 7,
     photo: chevroletOnix,
-    name: "CHEVROLET ONIX RS 2022",
+    name: "Chevrolet Onix RS 2022",
     year: 2022,
     brand: "Chevrolet",
     model: "Onix",

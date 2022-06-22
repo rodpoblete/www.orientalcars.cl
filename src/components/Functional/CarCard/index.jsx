@@ -6,6 +6,8 @@ import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import Grid from "@mui/material/Grid";
 
+import { moneyFormat } from "helpers/numbers";
+
 export default function CarCard({ carData }) {
   const { photo, name, year, brand, model, type, price } = carData;
   return (
@@ -14,10 +16,24 @@ export default function CarCard({ carData }) {
         <CardActionArea>
           <CardMedia component="img" height="180" image={photo} alt={name} />
           <CardContent sx={{ height: 180 }}>
-            <Typography gutterBottom variant="h7" component="div">
+            <Typography
+              sx={{
+                color: "text.secondary",
+                fontSize: 14,
+                fontWeight: "medium",
+                MaxHeight: 23,
+              }}
+            >
               {name}
             </Typography>
-            <Typography>PRECIO: ${price}</Typography>
+            <Typography
+              sx={{
+                color: "primary.main",
+                fontSize: 18,
+              }}
+            >
+              Precio: {moneyFormat(price)}
+            </Typography>
             <Typography variant="body2" color="text.secondary">
               ¿Buscas algún {type} nuevo? Ya disponible el {brand} {model} año{" "}
               {year}, equipamiento completo. Al contado o crédito.
