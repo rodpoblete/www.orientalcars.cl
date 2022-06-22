@@ -6,6 +6,9 @@ const path = require("path");
 module.exports = {
   resolve: {
     extensions: [".js", ".jsx"],
+    alias: {
+      helpers: path.resolve(__dirname, "src/helpers"),
+    },
   },
 
   entry: ["./src/index.jsx"],

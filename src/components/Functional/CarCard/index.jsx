@@ -6,10 +6,10 @@ import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import Grid from "@mui/material/Grid";
 
+import { moneyFormat } from "helpers/numbers";
+
 export default function CarCard({ carData }) {
   const { photo, name, year, brand, model, type, price } = carData;
-  const options = { style: "currency", currency: "CLP" };
-  const priceFormat = new Intl.NumberFormat("es-CL", options).format(price);
   return (
     <Grid item sx={4} sm={4} md={3}>
       <Card>
@@ -32,7 +32,7 @@ export default function CarCard({ carData }) {
                 fontSize: 18,
               }}
             >
-              Precio: {priceFormat}
+              Precio: {moneyFormat(price)}
             </Typography>
             <Typography variant="body2" color="text.secondary">
               ¿Buscas algún {type} nuevo? Ya disponible el {brand} {model} año{" "}

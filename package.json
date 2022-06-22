@@ -4,6 +4,7 @@
   "description": "Este es un cascaron de un proyecto de webpack",
   "main": "index.js",
   "scripts": {
+    "test": "jest",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "serve": "webpack serve --mode development --color --progress",
@@ -35,6 +36,7 @@
     "eslint-plugin-react-hooks": "^4.5.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.0",
+    "jest": "^28.1.1",
     "lint-staged": "^12.4.1",
     "prettier": "^2.6.2",
     "webpack": "^5.72.1",
