@@ -13,8 +13,18 @@ const root = createRoot(container); // createRoot(container!) if you use TypeScr
 
 const theme = createTheme({
   palette: {
-    primary: pink,
-    secondary: amber,
+    primary: {
+      light: "#484848",
+      main: "#212121",
+      dark: "#000000",
+      contrastText: "#ffffff",
+    },
+    secondary: {
+      light: "#ffffff",
+      main: "#f9f9f9",
+      dark: "#c6c6c6",
+      contrastText: "#000000",
+    },
   },
 });
 
