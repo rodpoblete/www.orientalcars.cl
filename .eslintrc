@@ -29,5 +29,9 @@
   },
   "env": {
     "browser": true
-  }
+  },
+  "globals": {
+    "test": true,
+    "expect": true
+  },
 }
