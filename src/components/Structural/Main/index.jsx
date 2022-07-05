@@ -14,6 +14,7 @@ import Footer from "../Footer";
 
 /** Functional components */
 import Home from "../../Functional/Home";
+import CarDetail from "../../Functional/CarDetail";
 
 const cssMain = (theme) =>
   css({
@@ -48,7 +49,8 @@ export default function Main() {
         <Header />
         <Grid container justifyContent="center" css={cssMain}>
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            {/* <Route exact path="/" element={<Home />} /> */}
+            <Route exact path="/detalle" element={<CarDetail />} />
           </Routes>
         </Grid>
       </Grid>
