@@ -49,8 +49,8 @@ export default function Main() {
         <Header />
         <Grid container justifyContent="center" css={cssMain}>
           <Routes>
-            {/* <Route exact path="/" element={<Home />} /> */}
-            <Route exact path="/detalle" element={<CarDetail />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/detalle" element={<CarDetail />} />
           </Routes>
         </Grid>
       </Grid>
