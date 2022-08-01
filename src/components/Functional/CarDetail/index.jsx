@@ -24,7 +24,7 @@ import { dataCars } from "../../../../dataCars";
 export default function carDetail() {
   return (
     <Container maxWidth="sm">
-      <Grid container backgroundColor="blue">
+      <Grid container rowSpacing={2}>
         <Grid item backgroundColor="gray" xs={12}>
           <Box
             component="img"
@@ -37,10 +37,18 @@ export default function carDetail() {
             alt={dataCars[0].name}
           />
         </Grid>
-        <Grid item backgroundColor="orange" xs={12}>
-          <Typography>Precio: {moneyFormat(dataCars[0].price)}</Typography>
+        <Grid item xs={12}>
+          <Typography
+            sx={{
+              color: "text.primary",
+              fontSize: 20,
+              fontWeight: "medium",
+            }}
+          >
+            Precio: {moneyFormat(dataCars[0].price)}
+          </Typography>
         </Grid>
-        <Grid item backgroundColor="green" xs={12}>
+        <Grid item xs={12}>
           <Typography
             sx={{
               color: "primary.main",
@@ -53,37 +61,67 @@ export default function carDetail() {
         </Grid>
         <Grid item xs={3} align="center">
           <DirectionsCarIcon />
-          <Typography>{dataCars[0].type}</Typography>
+          <Typography
+            sx={{
+              fontSize: 12,
+            }}
+          >
+            {dataCars[0].type}
+          </Typography>
         </Grid>
         <Grid item xs={3} align="center">
           <AddRoadIcon />
-          <Typography>{dataCars[0].mileage}</Typography>
+          <Typography
+            sx={{
+              fontSize: 12,
+            }}
+          >
+            {dataCars[0].mileage}
+          </Typography>
         </Grid>
         <Grid item xs={3} align="center">
           <LocalGasStationIcon />
-          <Typography>{dataCars[0].fuel}</Typography>
+          <Typography
+            sx={{
+              fontSize: 12,
+            }}
+          >
+            {dataCars[0].fuel}
+          </Typography>
         </Grid>
         <Grid item xs={3} align="center">
           <AirlineSeatReclineExtraIcon />
-          <Typography>{dataCars[0].seats}</Typography>
+          <Typography
+            sx={{
+              fontSize: 12,
+            }}
+          >
+            {dataCars[0].seats}
+          </Typography>
         </Grid>
         <Grid item xs={4} align="center">
-          <Typography>Marca: {dataCars[0].brand}</Typography>
+          <Typography display="inline">Marca: </Typography>
+          <Typography display="inline">{dataCars[0].brand}</Typography>
         </Grid>
         <Grid item xs={4} align="center">
-          <Typography>Año: {dataCars[0].year}</Typography>
+          <Typography display="inline">Año:</Typography>
+          <Typography display="inline">{dataCars[0].year}</Typography>
         </Grid>
         <Grid item xs={4} align="center">
-          <Typography>Modelo: {dataCars[0].model}</Typography>
+          <Typography display="inline">Modelo: </Typography>
+          <Typography display="inline">{dataCars[0].model}</Typography>
         </Grid>
         <Grid item xs={4} align="center">
-          <Typography>Dueños: {dataCars[0].owners}</Typography>
+          <Typography display="inline">Dueños: </Typography>
+          <Typography display="inline">{dataCars[0].owners}</Typography>
         </Grid>
         <Grid item xs={4} align="center">
-          <Typography>Versión: {dataCars[0].version}</Typography>
+          <Typography display="inline">Versión: </Typography>
+          <Typography display="inline">{dataCars[0].version}</Typography>
         </Grid>
         <Grid item xs={4} align="center">
-          <Typography>Llaves: {dataCars[0].keys}</Typography>
+          <Typography display="inline">Llaves: </Typography>
+          <Typography display="inline">{dataCars[0].keys}</Typography>
         </Grid>
         <Grid item xs={2} align="center">
           <CircleNotificationsIcon />
