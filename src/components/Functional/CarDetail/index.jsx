@@ -61,10 +61,6 @@ export default function carDetail() {
             <Typography>{dataCars[0].mileage}</Typography>
           </Grid>
           <Grid item xs={3} align="center">
-            <OilBarrelIcon />
-            <Typography>{dataCars[0].mileage}</Typography>
-          </Grid>
-          <Grid item xs={3} align="center">
             <LocalGasStationIcon />
             <Typography>{dataCars[0].fuel}</Typography>
           </Grid>
@@ -73,23 +69,29 @@ export default function carDetail() {
             <Typography>{dataCars[0].seats}</Typography>
           </Grid>
         </Grid>
-        <Grid container item backgroundColor="yellow" justifyContent="center">
-          <Grid item xs={2} align="center">
+        <Grid
+          container
+          item
+          backgroundColor="yellow"
+          direction="column"
+          justifyContent="center"
+        >
+          <Grid item xs={4} align="center">
             <Typography>Marca: {dataCars[0].brand}</Typography>
           </Grid>
-          <Grid item xs={2} align="center">
+          <Grid item xs={4} align="center">
             <Typography>Año: {dataCars[0].year}</Typography>
           </Grid>
-          <Grid item xs={2} align="center">
+          <Grid item xs={4} align="center">
             <Typography>Modelo: {dataCars[0].model}</Typography>
           </Grid>
-          <Grid item xs={2} align="center">
+          <Grid item xs={4} align="center">
             <Typography>Dueños: {dataCars[0].owners}</Typography>
           </Grid>
-          <Grid item xs={2} align="center">
+          <Grid item xs={4} align="center">
             <Typography>Versión: {dataCars[0].version}</Typography>
           </Grid>
-          <Grid item xs={2} align="center">
+          <Grid item xs={4} align="center">
             <Typography>Llaves: {dataCars[0].keys}</Typography>
           </Grid>
         </Grid>
@@ -134,13 +136,13 @@ export default function carDetail() {
           justifyContent="center"
           spacing={1}
         >
-          <Grid item>
+          <Grid item xs={6} align="center">
             <Button variant="outlined">
               <WhatsAppIcon />
               WhatsApp
             </Button>
           </Grid>
-          <Grid item>
+          <Grid item xs={6} align="center">
             <Button variant="outlined">
               <CallIcon />
               Llamar
