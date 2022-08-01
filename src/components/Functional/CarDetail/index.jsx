@@ -25,7 +25,7 @@ export default function carDetail() {
   return (
     <Container maxWidth="sm">
       <Grid container backgroundColor="blue">
-        <Grid item backgroundColor="gray" sx={12} sm={12} md={12}>
+        <Grid item backgroundColor="gray" xs={12}>
           <Box
             component="img"
             sx={{
@@ -37,10 +37,10 @@ export default function carDetail() {
           />
         </Grid>
         <Grid container item backgroundColor="purple">
-          <Grid item backgroundColor="orange" sx={12} sm={12} md={12}>
+          <Grid item backgroundColor="orange" xs={12}>
             <Typography>Precio: {moneyFormat(dataCars[0].price)}</Typography>
           </Grid>
-          <Grid item backgroundColor="green" sx={12} sm={12} md={12}>
+          <Grid item backgroundColor="green" xs={12}>
             <Typography
               sx={{
                 color: "primary.main",
@@ -51,67 +51,63 @@ export default function carDetail() {
               {dataCars[0].name}
             </Typography>
           </Grid>
-          <Grid container item backgroundColor="brown" justifyContent="center">
-            <Grid item sx={3}>
-              <DirectionsCarIcon />
-              Tipo
+          <Grid container item backgroundColor="brown">
+            <Grid item xs={3} align="center">
+              <DirectionsCarIcon /> Tipo
             </Grid>
-            <Grid item sx={3}>
-              <AddRoadIcon />
-              Kilometraje
+            <Grid item xs={3} align="center">
+              <AddRoadIcon /> Kilometraje
             </Grid>
-            <Grid item sx={3}>
-              <OilBarrelIcon />
-              Aceite
+            <Grid item xs={3} align="center">
+              <OilBarrelIcon /> Aceite
             </Grid>
-            <Grid item sx={3}>
-              <LocalGasStationIcon />
-              Gasolina
+            <Grid item xs={3} align="center">
+              <LocalGasStationIcon /> Gasolina
             </Grid>
           </Grid>
         </Grid>
         <Grid container item backgroundColor="yellow" justifyContent="center">
-          <Grid item sx={2} sm={2} md={2}>
+          <Grid item xs={2} align="center">
             <Typography>Marca: {dataCars[0].brand}</Typography>
           </Grid>
-          <Grid item sx={2} sm={2} md={2}>
+          <Grid item xs={2} align="center">
             <Typography>Año: {dataCars[0].year}</Typography>
           </Grid>
-          <Grid item sx={2} sm={2} md={2}>
+          <Grid item xs={2} align="center">
             <Typography>Modelo: {dataCars[0].model}</Typography>
           </Grid>
-          <Grid item sx={2} sm={2} md={2}>
+          <Grid item xs={2} align="center">
             <Typography>Dueños: {dataCars[0].owners}</Typography>
           </Grid>
-          <Grid item sx={2} sm={2} md={2}>
+          <Grid item xs={2} align="center">
             <Typography>Versión: {dataCars[0].version}</Typography>
           </Grid>
-          <Grid item sx={2} sm={2} md={2}>
+          <Grid item xs={2} align="center">
             <Typography>Llaves: {dataCars[0].keys}</Typography>
           </Grid>
         </Grid>
         <Grid container item backgroundColor="magenta">
-          <Grid item sx={2} sm={2} md={2}>
+          <Grid item xs={2} align="center">
             <CircleNotificationsIcon />
             Alarma
           </Grid>
-          <Grid item sx={2} sm={2} md={2}>
+          <Grid item xs={2} align="center">
             <LightModeIcon />
             Sensor de luz
           </Grid>
-          <Grid item sx={2} sm={2} md={2}>
+          <Grid item xs={2} align="center">
             <BluetoothIcon />
             Bluetooth
           </Grid>
-          <Grid item sx={2} sm={2} md={2}>
+          <Grid item xs={2} align="center">
             <AcUnitIcon />
             Climatizador
           </Grid>
-          <Grid item sx={2} sm={2} md={2}>
+          <Grid item xs={2} align="center">
             <CameraswitchIcon />
             Cámara de retroceso
           </Grid>
-          <Grid item sx={2} sm={2} md={2}>
+          <Grid item xs={2} align="center">
             <WarningAmberIcon />
             Sensor de proximidad
           </Grid>
