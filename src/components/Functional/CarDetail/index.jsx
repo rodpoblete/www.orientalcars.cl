@@ -31,96 +31,85 @@ export default function carDetail() {
             sx={{
               height: "100%",
               width: "100%",
+              objectFit: "cover",
             }}
             src={dataCars[0].photo}
             alt={dataCars[0].name}
           />
         </Grid>
-        <Grid container item backgroundColor="purple">
-          <Grid item backgroundColor="orange" xs={12}>
-            <Typography>Precio: {moneyFormat(dataCars[0].price)}</Typography>
-          </Grid>
-          <Grid item backgroundColor="green" xs={12}>
-            <Typography
-              sx={{
-                color: "primary.main",
-                fontSize: 22,
-                fontWeight: "medium",
-              }}
-            >
-              {dataCars[0].name}
-            </Typography>
-          </Grid>
-          <Grid item xs={3} align="center">
-            <DirectionsCarIcon />
-            <Typography>{dataCars[0].type}</Typography>
-          </Grid>
-          <Grid item xs={3} align="center">
-            <AddRoadIcon />
-            <Typography>{dataCars[0].mileage}</Typography>
-          </Grid>
-          <Grid item xs={3} align="center">
-            <LocalGasStationIcon />
-            <Typography>{dataCars[0].fuel}</Typography>
-          </Grid>
-          <Grid item xs={3} align="center">
-            <AirlineSeatReclineExtraIcon />
-            <Typography>{dataCars[0].seats}</Typography>
-          </Grid>
+        <Grid item backgroundColor="orange" xs={12}>
+          <Typography>Precio: {moneyFormat(dataCars[0].price)}</Typography>
         </Grid>
-        <Grid
-          container
-          item
-          backgroundColor="yellow"
-          direction="column"
-          justifyContent="center"
-        >
-          <Grid item xs={4} align="center">
-            <Typography>Marca: {dataCars[0].brand}</Typography>
-          </Grid>
-          <Grid item xs={4} align="center">
-            <Typography>Año: {dataCars[0].year}</Typography>
-          </Grid>
-          <Grid item xs={4} align="center">
-            <Typography>Modelo: {dataCars[0].model}</Typography>
-          </Grid>
-          <Grid item xs={4} align="center">
-            <Typography>Dueños: {dataCars[0].owners}</Typography>
-          </Grid>
-          <Grid item xs={4} align="center">
-            <Typography>Versión: {dataCars[0].version}</Typography>
-          </Grid>
-          <Grid item xs={4} align="center">
-            <Typography>Llaves: {dataCars[0].keys}</Typography>
-          </Grid>
+        <Grid item backgroundColor="green" xs={12}>
+          <Typography
+            sx={{
+              color: "primary.main",
+              fontSize: 22,
+              fontWeight: "medium",
+            }}
+          >
+            {dataCars[0].name}
+          </Typography>
         </Grid>
-        <Grid container item backgroundColor="magenta">
-          <Grid item xs={2} align="center">
-            <CircleNotificationsIcon />
-            <Typography>Alarma</Typography>
-          </Grid>
-          <Grid item xs={2} align="center">
-            <LightModeIcon />
-            <Typography>Sensor de luz</Typography>
-          </Grid>
-          <Grid item xs={2} align="center">
-            <BluetoothIcon />
-            <Typography>Bluetooth</Typography>
-          </Grid>
-          <Grid item xs={2} align="center">
-            <AcUnitIcon />
-            <Typography>Climatizador</Typography>
-          </Grid>
-          <Grid item xs={2} align="center">
-            <CameraswitchIcon />
-            <Typography>Cámara de retroceso</Typography>
-          </Grid>
-          <Grid item xs={2} align="center">
-            <WarningAmberIcon />
-            <Typography>Sensor de proximidad</Typography>
-          </Grid>
+        <Grid item xs={3} align="center">
+          <DirectionsCarIcon />
+          <Typography>{dataCars[0].type}</Typography>
         </Grid>
-        <Grid item backgroundColor="blue">
+        <Grid item xs={3} align="center">
+          <AddRoadIcon />
+          <Typography>{dataCars[0].mileage}</Typography>
+        </Grid>
+        <Grid item xs={3} align="center">
+          <LocalGasStationIcon />
+          <Typography>{dataCars[0].fuel}</Typography>
+        </Grid>
+        <Grid item xs={3} align="center">
+          <AirlineSeatReclineExtraIcon />
+          <Typography>{dataCars[0].seats}</Typography>
+        </Grid>
+        <Grid item xs={4} align="center">
+          <Typography>Marca: {dataCars[0].brand}</Typography>
+        </Grid>
+        <Grid item xs={4} align="center">
+          <Typography>Año: {dataCars[0].year}</Typography>
+        </Grid>
+        <Grid item xs={4} align="center">
+          <Typography>Modelo: {dataCars[0].model}</Typography>
+        </Grid>
+        <Grid item xs={4} align="center">
+          <Typography>Dueños: {dataCars[0].owners}</Typography>
+        </Grid>
+        <Grid item xs={4} align="center">
+          <Typography>Versión: {dataCars[0].version}</Typography>
+        </Grid>
+        <Grid item xs={4} align="center">
+          <Typography>Llaves: {dataCars[0].keys}</Typography>
+        </Grid>
+        <Grid item xs={2} align="center">
+          <CircleNotificationsIcon />
+          <Typography>Alarma</Typography>
+        </Grid>
+        <Grid item xs={2} align="center">
+          <LightModeIcon />
+          <Typography>Sensor de luz</Typography>
+        </Grid>
+        <Grid item xs={2} align="center">
+          <BluetoothIcon />
+          <Typography>Bluetooth</Typography>
+        </Grid>
+        <Grid item xs={2} align="center">
+          <AcUnitIcon />
+          <Typography>Climatizador</Typography>
+        </Grid>
+        <Grid item xs={2} align="center">
+          <CameraswitchIcon />
+          <Typography>Cámara de retroceso</Typography>
+        </Grid>
+        <Grid item xs={2} align="center">
+          <WarningAmberIcon />
+          <Typography>Sensor de proximidad</Typography>
+        </Grid>
+        <Grid item backgroundColor="red">
           <Typography>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum,
             tempora deserunt. Alias nihil libero officiis exercitationem itaque
@@ -128,25 +117,17 @@ export default function carDetail() {
             voluptatum, atque consequuntur fugiat dignissimos.
           </Typography>
         </Grid>
-        <Grid
-          container
-          item
-          backgroundColor="tomato"
-          justifyContent="center"
-          spacing={1}
-        >
-          <Grid item xs={6} align="center">
-            <Button variant="outlined">
-              <WhatsAppIcon />
-              WhatsApp
-            </Button>
-          </Grid>
-          <Grid item xs={6} align="center">
-            <Button variant="outlined">
-              <CallIcon />
-              Llamar
-            </Button>
-          </Grid>
+        <Grid item xs={6} align="center">
+          <Button variant="outlined">
+            <WhatsAppIcon />
+            WhatsApp
+          </Button>
+        </Grid>
+        <Grid item xs={6} align="center">
+          <Button variant="outlined">
+            <CallIcon />
+            Llamar
+          </Button>
         </Grid>
       </Grid>
     </Container>
