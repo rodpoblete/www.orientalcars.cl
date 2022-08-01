@@ -96,7 +96,7 @@ export default function carDetail() {
         <Grid container item backgroundColor="magenta">
           <Grid item xs={2} align="center">
             <CircleNotificationsIcon />
-            <Typography></Typography>Alarma
+            <Typography>Alarma</Typography>
           </Grid>
           <Grid item xs={2} align="center">
             <LightModeIcon />
