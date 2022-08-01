@@ -14,6 +14,7 @@ import CameraswitchIcon from "@mui/icons-material/Cameraswitch";
 import WarningAmberIcon from "@mui/icons-material/WarningAmber";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import CallIcon from "@mui/icons-material/Call";
+import AirlineSeatReclineExtraIcon from "@mui/icons-material/AirlineSeatReclineExtra";
 
 import Grid from "@mui/material/Grid";
 
@@ -51,19 +52,25 @@ export default function carDetail() {
               {dataCars[0].name}
             </Typography>
           </Grid>
-          <Grid container item backgroundColor="brown">
-            <Grid item xs={3} align="center">
-              <DirectionsCarIcon /> Tipo
-            </Grid>
-            <Grid item xs={3} align="center">
-              <AddRoadIcon /> Kilometraje
-            </Grid>
-            <Grid item xs={3} align="center">
-              <OilBarrelIcon /> Aceite
-            </Grid>
-            <Grid item xs={3} align="center">
-              <LocalGasStationIcon /> Gasolina
-            </Grid>
+          <Grid item xs={3} align="center">
+            <DirectionsCarIcon />
+            <Typography>{dataCars[0].type}</Typography>
+          </Grid>
+          <Grid item xs={3} align="center">
+            <AddRoadIcon />
+            <Typography>{dataCars[0].mileage}</Typography>
+          </Grid>
+          <Grid item xs={3} align="center">
+            <OilBarrelIcon />
+            <Typography>{dataCars[0].mileage}</Typography>
+          </Grid>
+          <Grid item xs={3} align="center">
+            <LocalGasStationIcon />
+            <Typography>{dataCars[0].fuel}</Typography>
+          </Grid>
+          <Grid item xs={3} align="center">
+            <AirlineSeatReclineExtraIcon />
+            <Typography>{dataCars[0].seats}</Typography>
           </Grid>
         </Grid>
         <Grid container item backgroundColor="yellow" justifyContent="center">
@@ -89,27 +96,27 @@ export default function carDetail() {
         <Grid container item backgroundColor="magenta">
           <Grid item xs={2} align="center">
             <CircleNotificationsIcon />
-            Alarma
+            <Typography></Typography>Alarma
           </Grid>
           <Grid item xs={2} align="center">
             <LightModeIcon />
-            Sensor de luz
+            <Typography>Sensor de luz</Typography>
           </Grid>
           <Grid item xs={2} align="center">
             <BluetoothIcon />
-            Bluetooth
+            <Typography>Bluetooth</Typography>
           </Grid>
           <Grid item xs={2} align="center">
             <AcUnitIcon />
-            Climatizador
+            <Typography>Climatizador</Typography>
           </Grid>
           <Grid item xs={2} align="center">
             <CameraswitchIcon />
-            Cámara de retroceso
+            <Typography>Cámara de retroceso</Typography>
           </Grid>
           <Grid item xs={2} align="center">
             <WarningAmberIcon />
-            Sensor de proximidad
+            <Typography>Sensor de proximidad</Typography>
           </Grid>
         </Grid>
         <Grid item backgroundColor="blue">
