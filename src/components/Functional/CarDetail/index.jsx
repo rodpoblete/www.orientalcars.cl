@@ -2,6 +2,8 @@ import * as React from "react";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { Box, Button } from "@mui/material";
+import Chip from "@mui/material/Chip";
+import Divider from "@mui/material/Divider";
 import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
 import AddRoadIcon from "@mui/icons-material/AddRoad";
 import LocalGasStationIcon from "@mui/icons-material/LocalGasStation";
@@ -17,15 +19,15 @@ import AirlineSeatReclineExtraIcon from "@mui/icons-material/AirlineSeatReclineE
 
 import Grid from "@mui/material/Grid";
 
-import { moneyFormat } from "helpers/numbers";
+import { moneyFormat, numberFormat } from "helpers/numbers";
 
 import { dataCars } from "../../../../dataCars";
 
 export default function carDetail() {
   return (
-    <Container maxWidth="sm">
-      <Grid container rowSpacing={2}>
-        <Grid item backgroundColor="gray" xs={12}>
+    <Container maxWidth="md">
+      <Grid container rowSpacing={4}>
+        <Grid item xs={12}>
           <Box
             component="img"
             sx={{
@@ -38,131 +40,119 @@ export default function carDetail() {
           />
         </Grid>
         <Grid item xs={12}>
-          <Typography
-            sx={{
-              color: "text.primary",
-              fontSize: 20,
-              fontWeight: "medium",
-            }}
-          >
-            Precio: {moneyFormat(dataCars[0].price)}
+          <Typography display="inline">Precio: </Typography>
+          <Typography variant="h6" display="inline">
+            {moneyFormat(dataCars[0].price)}
           </Typography>
         </Grid>
         <Grid item xs={12}>
-          <Typography
-            sx={{
-              color: "primary.main",
-              fontSize: 22,
-              fontWeight: "medium",
-            }}
-          >
-            {dataCars[0].name}
-          </Typography>
+          <Typography variant="h5">{dataCars[0].name}</Typography>
         </Grid>
         <Grid item xs={3} align="center">
           <DirectionsCarIcon />
-          <Typography
-            sx={{
-              fontSize: 12,
-            }}
-          >
-            {dataCars[0].type}
-          </Typography>
+          <Typography variant="body2">{dataCars[0].type}</Typography>
         </Grid>
         <Grid item xs={3} align="center">
           <AddRoadIcon />
-          <Typography
-            sx={{
-              fontSize: 12,
-            }}
-          >
-            {dataCars[0].mileage}
+          <Typography variant="body2">
+            {numberFormat(dataCars[0].mileage)}
           </Typography>
         </Grid>
         <Grid item xs={3} align="center">
           <LocalGasStationIcon />
-          <Typography
-            sx={{
-              fontSize: 12,
-            }}
-          >
-            {dataCars[0].fuel}
-          </Typography>
+          <Typography variant="body2">{dataCars[0].fuel}</Typography>
         </Grid>
         <Grid item xs={3} align="center">
           <AirlineSeatReclineExtraIcon />
-          <Typography
-            sx={{
-              fontSize: 12,
-            }}
-          >
-            {dataCars[0].seats}
-          </Typography>
+          <Typography variant="body2">{dataCars[0].seats}</Typography>
+        </Grid>
+        <Grid item xs={12}>
+          <Divider />
         </Grid>
         <Grid item xs={4} align="center">
           <Typography display="inline">Marca: </Typography>
-          <Typography display="inline">{dataCars[0].brand}</Typography>
+          <Chip label={dataCars[0].brand} color="primary" />
         </Grid>
         <Grid item xs={4} align="center">
-          <Typography display="inline">Año:</Typography>
-          <Typography display="inline">{dataCars[0].year}</Typography>
+          <Typography display="inline">Año: </Typography>
+          <Chip label={dataCars[0].year} color="primary" />
         </Grid>
         <Grid item xs={4} align="center">
           <Typography display="inline">Modelo: </Typography>
-          <Typography display="inline">{dataCars[0].model}</Typography>
+          <Chip label={dataCars[0].model} color="primary" />
         </Grid>
         <Grid item xs={4} align="center">
           <Typography display="inline">Dueños: </Typography>
-          <Typography display="inline">{dataCars[0].owners}</Typography>
+          <Chip label={dataCars[0].owners} color="primary" />
         </Grid>
         <Grid item xs={4} align="center">
           <Typography display="inline">Versión: </Typography>
-          <Typography display="inline">{dataCars[0].version}</Typography>
+          <Chip label={dataCars[0].version} color="primary" />
         </Grid>
         <Grid item xs={4} align="center">
           <Typography display="inline">Llaves: </Typography>
-          <Typography display="inline">{dataCars[0].keys}</Typography>
+          <Chip label={dataCars[0].keys} color="primary" />
+        </Grid>
+        <Grid item xs={12}>
+          <Divider />
+        </Grid>
+        <Grid item xs={12} align="center">
+          <Typography variant="h6">Características Adicionales</Typography>
         </Grid>
         <Grid item xs={2} align="center">
           <CircleNotificationsIcon />
-          <Typography>Alarma</Typography>
+          <Typography variant="body2">Alarma</Typography>
         </Grid>
         <Grid item xs={2} align="center">
           <LightModeIcon />
-          <Typography>Sensor de luz</Typography>
+          <Typography variant="body2">Sensor de luz</Typography>
         </Grid>
         <Grid item xs={2} align="center">
           <BluetoothIcon />
-          <Typography>Bluetooth</Typography>
+          <Typography variant="body2">Bluetooth</Typography>
         </Grid>
         <Grid item xs={2} align="center">
           <AcUnitIcon />
-          <Typography>Climatizador</Typography>
+          <Typography variant="body2">Climatizador</Typography>
         </Grid>
         <Grid item xs={2} align="center">
           <CameraswitchIcon />
-          <Typography>Cámara de retroceso</Typography>
+          <Typography variant="body2">Cámara de retroceso</Typography>
         </Grid>
         <Grid item xs={2} align="center">
           <WarningAmberIcon />
-          <Typography>Sensor de proximidad</Typography>
+          <Typography variant="body2">Sensor de proximidad</Typography>
         </Grid>
-        <Grid item backgroundColor="red">
-          <Typography>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum,
-            tempora deserunt. Alias nihil libero officiis exercitationem itaque
-            laboriosam necessitatibus, eaque quas, ducimus quaerat nulla a
-            voluptatum, atque consequuntur fugiat dignissimos.
+        <Grid item xs={12}>
+          <Divider />
+        </Grid>
+        <Grid item>
+          <Typography variant="body1">
+            ¿Que tal si te lo llevas? No dejes pasar este {dataCars[0].name} con{" "}
+            {numberFormat(dataCars[0].mileage)} Kilómetros, esta nuevecito, es
+            la versión mas full, cuenta con todo su equipamiento, doble airbag,
+            controles al volante, computador a bordo, aire acondicionado, alza
+            vidrios eléctricos, cierre centralizado, cámara y sensores de
+            retroceso, llantas de aleación con frenos abs. Puede ser tuyo al
+            contado o con crédito.
+          </Typography>
+        </Grid>
+        <Grid item xs={12}>
+          <Divider />
+        </Grid>
+        <Grid item xs={12} align="center">
+          <Typography display="inline">
+            ¿Necesitas opciones de financiamiento?
           </Typography>
         </Grid>
         <Grid item xs={6} align="center">
-          <Button variant="outlined">
+          <Button variant="contained">
             <WhatsAppIcon />
             WhatsApp
           </Button>
         </Grid>
         <Grid item xs={6} align="center">
-          <Button variant="outlined">
+          <Button variant="contained">
             <CallIcon />
             Llamar
           </Button>
