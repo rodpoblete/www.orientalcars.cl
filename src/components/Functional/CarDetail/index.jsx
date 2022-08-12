@@ -17,6 +17,10 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import CallIcon from "@mui/icons-material/Call";
 import AirlineSeatReclineExtraIcon from "@mui/icons-material/AirlineSeatReclineExtra";
 
+import { Navigation, Pagination } from "swiper";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
 import Grid from "@mui/material/Grid";
 
 import { moneyFormat, numberFormat } from "helpers/numbers";
@@ -28,16 +32,28 @@ export default function carDetail() {
     <Container maxWidth="md">
       <Grid container rowSpacing={4}>
         <Grid item xs={12}>
-          <Box
-            component="img"
-            sx={{
-              height: "100%",
-              width: "100%",
-              objectFit: "cover",
-            }}
-            src={dataCars[0].photo}
-            alt={dataCars[0].name}
-          />
+          <Box>
+            <Swiper
+              modules={[Navigation, Pagination]}
+              navigation
+              pagination={{ clickable: true }}
+            >
+              <SwiperSlide key={dataCars[1].id}>
+                <Box
+                  component="img"
+                  src={dataCars[1].photo}
+                  alt={dataCars[1].name}
+                />
+              </SwiperSlide>
+              <SwiperSlide key={dataCars[2].id}>
+                <Box
+                  component="img"
+                  src={dataCars[2].photo}
+                  alt={dataCars[2].name}
+                />
+              </SwiperSlide>
+            </Swiper>
+          </Box>
         </Grid>
         <Grid item xs={12}>
           <Typography display="inline">Precio: </Typography>
