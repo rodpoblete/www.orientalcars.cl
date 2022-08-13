@@ -23,6 +23,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import Grid from "@mui/material/Grid";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+
 import { moneyFormat, numberFormat } from "helpers/numbers";
 
 import { dataCars } from "../../../../dataCars";
@@ -38,20 +42,21 @@ export default function carDetail() {
               navigation
               pagination={{ clickable: true }}
             >
-              <SwiperSlide key={dataCars[1].id}>
-                <Box
-                  component="img"
-                  src={dataCars[1].photo}
-                  alt={dataCars[1].name}
-                />
-              </SwiperSlide>
-              <SwiperSlide key={dataCars[2].id}>
-                <Box
-                  component="img"
-                  src={dataCars[2].photo}
-                  alt={dataCars[2].name}
-                />
-              </SwiperSlide>
+              {dataCars.map((dataCar) => (
+                <SwiperSlide key={dataCar.id}>
+                  <Box
+                    component="img"
+                    src={dataCar.photo}
+                    alt={dataCar.name}
+                    sx={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      objectPosition: "center center",
+                    }}
+                  />
+                </SwiperSlide>
+              ))}
             </Swiper>
           </Box>
         </Grid>
