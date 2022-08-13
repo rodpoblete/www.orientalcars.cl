@@ -22,10 +22,8 @@
       {
         "prop": "ignore"
       }
-    ]
-  },
-  "parserOptions": {
-    "ecmaVersion": 11
+    ],
+    "no-console": "error"
   },
   "env": {
     "browser": true
@@ -34,4 +32,12 @@
     "test": true,
     "expect": true
   },
+  "parserOptions": {
+    "ecmaVersion": 11
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": "webpack"
+    }
+  }
 }
