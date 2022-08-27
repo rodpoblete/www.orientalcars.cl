@@ -31,26 +31,30 @@ import { moneyFormat, numberFormat } from "helpers/numbers";
 
 import { dataCars } from "../../../../dataCars";
 
+const arrayPhotosCars = dataCars[0].photos;
+
 export default function carDetail() {
   return (
     <Container maxWidth="md">
       <Grid container rowSpacing={4}>
         <Grid item xs={12}>
-          <Box>
+          <Box sx={{ textAlign: "center" }}>
             <Swiper
-              modules={[Navigation, Pagination]}
+              pagination={{
+                type: "fraction",
+              }}
               navigation
-              pagination={{ clickable: true }}
+              modules={[Navigation, Pagination]}
             >
-              {dataCars.map((dataCar) => (
-                <SwiperSlide key={dataCar.id}>
+              {arrayPhotosCars.map((photo) => (
+                <SwiperSlide key={photo}>
                   <Box
                     component="img"
-                    src={dataCar.photo}
-                    alt={dataCar.name}
+                    src={photo}
                     sx={{
                       width: "100%",
                       height: "100%",
+                      maxHeight: "500px",
                       objectFit: "cover",
                       objectPosition: "center center",
                     }}
@@ -62,9 +66,11 @@ export default function carDetail() {
         </Grid>
         <Grid item xs={12}>
           <Typography display="inline">Precio: </Typography>
-          <Typography variant="h6" display="inline">
-            {moneyFormat(dataCars[0].price)}
-          </Typography>
+          <Chip
+            sx={{ fontSize: "1.2rem" }}
+            label={moneyFormat(dataCars[0].price)}
+            color="primary"
+          />
         </Grid>
         <Grid item xs={12}>
           <Typography variant="h5">{dataCars[0].name}</Typography>
@@ -166,16 +172,16 @@ export default function carDetail() {
             ¿Necesitas opciones de financiamiento?
           </Typography>
         </Grid>
-        <Grid item xs={6} align="center">
+        <Grid item xs={6} align="center" mt={8}>
           <Button variant="contained">
             <WhatsAppIcon />
-            WhatsApp
+            Escríbenos
           </Button>
         </Grid>
-        <Grid item xs={6} align="center">
+        <Grid item xs={6} align="center" mt={8}>
           <Button variant="contained">
             <CallIcon />
-            Llamar
+            Llámanos
           </Button>
         </Grid>
       </Grid>
