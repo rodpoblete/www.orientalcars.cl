@@ -9,12 +9,17 @@ import Grid from "@mui/material/Grid";
 import { moneyFormat } from "helpers/numbers";
 
 export default function CarCard({ carData }) {
-  const { photo, name, year, brand, model, type, price } = carData;
+  const { photos, name, year, brand, model, type, price } = carData;
   return (
-    <Grid item sx={4} sm={4} md={3}>
+    <Grid item xs={4} sm={4} md={3}>
       <Card>
         <CardActionArea>
-          <CardMedia component="img" height="180" image={photo} alt={name} />
+          <CardMedia
+            component="img"
+            height="180"
+            image={photos[0]}
+            alt={name}
+          />
           <CardContent sx={{ height: 180 }}>
             <Typography
               sx={{
