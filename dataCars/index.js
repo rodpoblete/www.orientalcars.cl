@@ -9,7 +9,7 @@ const toyotaRaize = require("../src/assets/img/cars/toyota-raize-2022.webp");
 exports.dataCars = [
   {
     id: 1,
-    photo: hyundaiGrand22,
+    photos: [hyundaiGrand22],
     name: "Hyundai Grand I10 2022",
     year: 2022,
     brand: "Hyundai",
@@ -27,7 +27,7 @@ exports.dataCars = [
   },
   {
     id: 2,
-    photo: susukiSpresso,
+    photos: [susukiSpresso],
     name: "Suzuki S-Presso GLX 2021",
     year: 2021,
     brand: "Susuki",
@@ -45,7 +45,7 @@ exports.dataCars = [
   },
   {
     id: 3,
-    photo: susukiAlto,
+    photos: [susukiAlto],
     name: "Suzuki Alto 2022",
     year: 2022,
     brand: "Susuki",
@@ -63,7 +63,7 @@ exports.dataCars = [
   },
   {
     id: 4,
-    photo: hyundaiGrand19,
+    photos: [hyundaiGrand19],
     name: "Hyundai Grand I10 2019",
     year: 2019,
     brand: "Hyundai",
@@ -81,7 +81,7 @@ exports.dataCars = [
   },
   {
     id: 5,
-    photo: susukiBaleno,
+    photos: [susukiBaleno],
     name: "Suzuki GLS Baleno 2022",
     year: 2022,
     brand: "Susuki",
@@ -99,7 +99,7 @@ exports.dataCars = [
   },
   {
     id: 6,
-    photo: toyotaRaize,
+    photos: [toyotaRaize],
     name: "Toyota Raize 2022",
     year: 2022,
     brand: "Toyota",
@@ -117,7 +117,7 @@ exports.dataCars = [
   },
   {
     id: 7,
-    photo: chevroletOnix,
+    photos: [chevroletOnix],
     name: "Chevrolet Onix RS 2022",
     year: 2022,
     brand: "Chevrolet",
