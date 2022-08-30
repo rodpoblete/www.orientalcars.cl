@@ -4,8 +4,6 @@ import { BrowserRouter } from "react-router-dom";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-import { amber, pink } from "@mui/material/colors";
-
 import App from "./components/Structural/App";
 
 const container = document.getElementById("app");
@@ -20,9 +18,9 @@ const theme = createTheme({
       contrastText: "#ffffff",
     },
     secondary: {
-      light: "#ffffff",
-      main: "#f9f9f9",
-      dark: "#c6c6c6",
+      light: "#fff263",
+      main: "#fbc02d",
+      dark: "#c49000",
       contrastText: "#000000",
     },
   },
