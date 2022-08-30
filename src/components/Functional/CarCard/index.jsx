@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -46,7 +47,7 @@ export default function CarCard({ carData }) {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button type="submit" fullWidth variant="contained">
+          <Button component={Link} to="/detalle" fullWidth variant="contained">
             Más Detalles
           </Button>
         </CardActions>
