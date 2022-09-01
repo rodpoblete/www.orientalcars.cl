@@ -50,7 +50,7 @@ export default function Main() {
         <Grid container justifyContent="center" css={cssMain}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/detalle" element={<CarDetail />} />
+            <Route path="/detalle/:carId" element={<CarDetail />} />
           </Routes>
         </Grid>
       </Grid>

@@ -1,4 +1,5 @@
-import * as React from "react";
+import React from "react";
+import { useParams } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { Box, Button } from "@mui/material";
@@ -31,9 +32,13 @@ import { moneyFormat, numberFormat } from "helpers/numbers";
 
 import { dataCars } from "../../../../dataCars";
 
-const arrayPhotosCars = dataCars[0].photos;
-
 export default function carDetail() {
+  const { carId: selectedCarId } = useParams();
+
+  const selectedCar = dataCars.find(
+    (car) => car.id.toString() === selectedCarId.toString()
+  );
+
   return (
     <Container maxWidth="md">
       <Grid container rowSpacing={4}>
@@ -46,7 +51,7 @@ export default function carDetail() {
               navigation
               modules={[Navigation, Pagination]}
             >
-              {arrayPhotosCars.map((photo) => (
+              {selectedCar.photos.map((photo) => (
                 <SwiperSlide key={photo}>
                   <Box
                     component="img"
