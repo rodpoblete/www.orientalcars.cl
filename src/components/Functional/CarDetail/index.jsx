@@ -1,4 +1,5 @@
-import * as React from "react";
+import React from "react";
+import { useParams } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { Box, Button } from "@mui/material";
@@ -31,9 +32,13 @@ import { moneyFormat, numberFormat } from "helpers/numbers";
 
 import { dataCars } from "../../../../dataCars";
 
-const arrayPhotosCars = dataCars[0].photos;
-
 export default function carDetail() {
+  const { carId: selectedCarId } = useParams();
+
+  const selectedCar = dataCars.find(
+    (car) => car.id.toString() === selectedCarId.toString()
+  );
+
   return (
     <Container maxWidth="md">
       <Grid container rowSpacing={4}>
@@ -46,7 +51,7 @@ export default function carDetail() {
               navigation
               modules={[Navigation, Pagination]}
             >
-              {arrayPhotosCars.map((photo) => (
+              {selectedCar.photos.map((photo) => (
                 <SwiperSlide key={photo}>
                   <Box
                     component="img"
@@ -68,57 +73,57 @@ export default function carDetail() {
           <Typography display="inline">Precio: </Typography>
           <Chip
             sx={{ fontSize: "1.2rem" }}
-            label={moneyFormat(dataCars[0].price)}
+            label={moneyFormat(selectedCar.price)}
             color="primary"
           />
         </Grid>
         <Grid item xs={12}>
-          <Typography variant="h5">{dataCars[0].name}</Typography>
+          <Typography variant="h5">{selectedCar.name}</Typography>
         </Grid>
         <Grid item xs={3} align="center">
           <DirectionsCarIcon />
-          <Typography variant="body2">{dataCars[0].type}</Typography>
+          <Typography variant="body2">{selectedCar.type}</Typography>
         </Grid>
         <Grid item xs={3} align="center">
           <AddRoadIcon />
           <Typography variant="body2">
-            {numberFormat(dataCars[0].mileage)}
+            {numberFormat(selectedCar.mileage)}
           </Typography>
         </Grid>
         <Grid item xs={3} align="center">
           <LocalGasStationIcon />
-          <Typography variant="body2">{dataCars[0].fuel}</Typography>
+          <Typography variant="body2">{selectedCar.fuel}</Typography>
         </Grid>
         <Grid item xs={3} align="center">
           <AirlineSeatReclineExtraIcon />
-          <Typography variant="body2">{dataCars[0].seats}</Typography>
+          <Typography variant="body2">{selectedCar.seats}</Typography>
         </Grid>
         <Grid item xs={12}>
           <Divider />
         </Grid>
         <Grid item xs={4} align="center">
           <Typography display="inline">Marca: </Typography>
-          <Chip label={dataCars[0].brand} color="primary" />
+          <Chip label={selectedCar.brand} color="primary" />
         </Grid>
         <Grid item xs={4} align="center">
           <Typography display="inline">Año: </Typography>
-          <Chip label={dataCars[0].year} color="primary" />
+          <Chip label={selectedCar.year} color="primary" />
         </Grid>
         <Grid item xs={4} align="center">
           <Typography display="inline">Modelo: </Typography>
-          <Chip label={dataCars[0].model} color="primary" />
+          <Chip label={selectedCar.model} color="primary" />
         </Grid>
         <Grid item xs={4} align="center">
           <Typography display="inline">Dueños: </Typography>
-          <Chip label={dataCars[0].owners} color="primary" />
+          <Chip label={selectedCar.owners} color="primary" />
         </Grid>
         <Grid item xs={4} align="center">
           <Typography display="inline">Versión: </Typography>
-          <Chip label={dataCars[0].version} color="primary" />
+          <Chip label={selectedCar.version} color="primary" />
         </Grid>
         <Grid item xs={4} align="center">
           <Typography display="inline">Llaves: </Typography>
-          <Chip label={dataCars[0].keys} color="primary" />
+          <Chip label={selectedCar.keys} color="primary" />
         </Grid>
         <Grid item xs={12}>
           <Divider />
@@ -155,8 +160,8 @@ export default function carDetail() {
         </Grid>
         <Grid item>
           <Typography variant="body1">
-            ¿Que tal si te lo llevas? No dejes pasar este {dataCars[0].name} con{" "}
-            {numberFormat(dataCars[0].mileage)} Kilómetros, esta nuevecito, es
+            ¿Que tal si te lo llevas? No dejes pasar este {selectedCar.name} con{" "}
+            {numberFormat(selectedCar.mileage)} Kilómetros, esta nuevecito, es
             la versión mas full, cuenta con todo su equipamiento, doble airbag,
             controles al volante, computador a bordo, aire acondicionado, alza
             vidrios eléctricos, cierre centralizado, cámara y sensores de

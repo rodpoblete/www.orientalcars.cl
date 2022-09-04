@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link as RouterLink } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
@@ -9,7 +10,7 @@ import Grid from "@mui/material/Grid";
 import { moneyFormat } from "helpers/numbers";
 
 export default function CarCard({ carData }) {
-  const { photos, name, year, brand, model, type, price } = carData;
+  const { id, photos, name, year, brand, model, type, price } = carData;
   return (
     <Grid item xs={4} sm={4} md={3}>
       <Card>
@@ -46,7 +47,12 @@ export default function CarCard({ carData }) {
           </CardContent>
         </CardActionArea>
         <CardActions>
-          <Button type="submit" fullWidth variant="contained">
+          <Button
+            component={RouterLink}
+            to={`/detalle/${id}`}
+            fullWidth
+            variant="contained"
+          >
             Más Detalles
           </Button>
         </CardActions>
