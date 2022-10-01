@@ -17,6 +17,7 @@ import WarningAmberIcon from "@mui/icons-material/WarningAmber";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import CallIcon from "@mui/icons-material/Call";
 import AirlineSeatReclineExtraIcon from "@mui/icons-material/AirlineSeatReclineExtra";
+import Link from "@mui/material/Link";
 
 import { Navigation, Pagination } from "swiper";
 
@@ -178,16 +179,20 @@ export default function carDetail() {
           </Typography>
         </Grid>
         <Grid item xs={6} align="center" mt={8}>
-          <Button variant="contained">
-            <WhatsAppIcon />
-            Escríbenos
-          </Button>
+          <Link href="https://wa.me/56992154860">
+            <Button variant="contained">
+              <WhatsAppIcon />
+              Escríbenos
+            </Button>
+          </Link>
         </Grid>
         <Grid item xs={6} align="center" mt={8}>
-          <Button variant="contained">
-            <CallIcon />
-            Llámanos
-          </Button>
+          <Link href="tel:56992154860">
+            <Button variant="contained">
+              <CallIcon />
+              Llámanos
+            </Button>
+          </Link>
         </Grid>
       </Grid>
     </Container>
