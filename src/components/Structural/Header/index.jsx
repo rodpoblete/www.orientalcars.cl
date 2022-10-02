@@ -6,6 +6,8 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
+import Link from "@mui/material/Link";
+import { Link as RouterLink } from "react-router-dom";
 
 import logo from "../../../assets/img/logo/logo_min.svg";
 
@@ -60,7 +62,20 @@ export default function SearchAppBar() {
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <StyledLogo src={logo} alt="logo" />
+          <Link
+            component={RouterLink}
+            to="/"
+            color="inherit"
+            style={{ textDecoration: "none" }}
+          >
+            <Box
+              component="img"
+              src={logo}
+              alt=""
+              height="72px"
+              sx={{ maxWidth: 100 }}
+            />
+          </Link>
           <Typography
             variant="h6"
             noWrap
