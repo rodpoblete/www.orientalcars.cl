@@ -66,14 +66,14 @@ export default function SearchAppBar() {
             component={RouterLink}
             to="/"
             color="inherit"
-            style={{ textDecoration: "none" }}
+            sx={{ textDecoration: "none", display: "grid" }}
           >
             <Box
               component="img"
               src={logo}
               alt=""
               height="72px"
-              sx={{ maxWidth: 100 }}
+              sx={{ maxWidth: "100px" }}
             />
           </Link>
           <Typography
