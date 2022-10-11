@@ -159,15 +159,7 @@ export default function carDetail() {
           <Divider />
         </Grid>
         <Grid item>
-          <Typography variant="body1">
-            ¿Que tal si te lo llevas? No dejes pasar este {selectedCar.name} con{" "}
-            {numberFormat(selectedCar.mileage)} Kilómetros, esta nuevecito, es
-            la versión mas full, cuenta con todo su equipamiento, doble airbag,
-            controles al volante, computador a bordo, aire acondicionado, alza
-            vidrios eléctricos, cierre centralizado, cámara y sensores de
-            retroceso, llantas de aleación con frenos abs. Puede ser tuyo al
-            contado o con crédito.
-          </Typography>
+          <Typography variant="body1">{selectedCar.description}</Typography>
         </Grid>
         <Grid item xs={12}>
           <Divider />
