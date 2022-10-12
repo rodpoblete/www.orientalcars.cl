@@ -1,5 +1,4 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CopyPlugin = require("copy-webpack-plugin");
 
 const path = require("path");
 
@@ -8,6 +7,7 @@ module.exports = {
     extensions: [".js", ".jsx"],
     alias: {
       helpers: path.resolve(__dirname, "src/helpers"),
+      img: path.resolve(__dirname, "src/assets/img"),
     },
   },
 

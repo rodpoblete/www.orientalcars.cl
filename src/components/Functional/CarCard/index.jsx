@@ -10,7 +10,7 @@ import Grid from "@mui/material/Grid";
 import { moneyFormat } from "helpers/numbers";
 
 export default function CarCard({ carData }) {
-  const { id, photos, name, year, brand, model, type, price } = carData;
+  const { id, photos, name, price, description } = carData;
   return (
     <Grid item xs={6} sm={4} md={3}>
       <Card>
@@ -40,9 +40,12 @@ export default function CarCard({ carData }) {
             >
               Precio: {moneyFormat(price)}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
-              ¿Buscas algún {type} nuevo? Ya disponible el {brand} {model} año{" "}
-              {year}, equipamiento completo. Al contado o crédito.
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              sx={{ height: "100px", overflow: "hidden" }}
+            >
+              {description}
             </Typography>
           </CardContent>
         </CardActionArea>
