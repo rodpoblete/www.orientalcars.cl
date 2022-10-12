@@ -43,7 +43,7 @@ export default function CarCard({ carData }) {
             <Typography
               variant="body2"
               color="text.secondary"
-              inputProps={{ maxLength: 5 }}
+              sx={{ height: "100px", overflow: "hidden" }}
             >
               {description}
             </Typography>
