@@ -1,88 +1,88 @@
-const cheryTigo2PassengerSeatLeft = require("../src/assets/img/cars/cheryTigo2/chery2_passenger_seat_left.webp");
-const cheryTigo2Back = require("../src/assets/img/cars/cheryTigo2/chery_tigo2_back.webp");
-const cheryTigo2CentralPanel = require("../src/assets/img/cars/cheryTigo2/chery_tigo2_central_panel.webp");
-const cheryTigo2CopilotSeat = require("../src/assets/img/cars/cheryTigo2/chery_tigo2_copilot_seat_right.webp");
-const cheryTigo2Cover = require("../src/assets/img/cars/cheryTigo2/chery_tigo2_cover.webp");
-const cheryTigo2Extra = require("../src/assets/img/cars/cheryTigo2/chery_tigo2_extra.webp");
-const cheryTigo2LateralBackLeft = require("../src/assets/img/cars/cheryTigo2/chery_tigo2_lateral_back_left.webp");
-const cheryTigoLateralBackRight = require("../src/assets/img/cars/cheryTigo2/chery_tigo2_lateral_back_right.webp");
-const cheryTigo2LateralFrontLeft = require("../src/assets/img/cars/cheryTigo2/chery_tigo2_lateral_front_left.webp");
-const cheryTigoLateralFrontRight = require("../src/assets/img/cars/cheryTigo2/chery_tigo2_lateral_front_right.webp");
-const cheryTigo2PassengerSeatRight = require("../src/assets/img/cars/cheryTigo2/chery_tigo2_passenger_seat_right.webp");
-const cheryTigo2PilotSeat = require("../src/assets/img/cars/cheryTigo2/chery_tigo2_pilot_seat_left.webp");
-const cheryTigo2SteeringWheel = require("../src/assets/img/cars/cheryTigo2/chery_tigo2_steering_wheel.webp");
+const chery1 = require("img/cars/cheryTigo2/chery_tigo2_cover.webp");
+const chery2 = require("img/cars/cheryTigo2/chery2_passenger_seat_left.webp");
+const chery3 = require("img/cars/cheryTigo2/chery_tigo2_back.webp");
+const chery4 = require("img/cars/cheryTigo2/chery_tigo2_central_panel.webp");
+const chery5 = require("img/cars/cheryTigo2/chery_tigo2_copilot_seat_right.webp");
+const chery6 = require("img/cars/cheryTigo2/chery_tigo2_extra.webp");
+const chery7 = require("img/cars/cheryTigo2/chery_tigo2_lateral_back_left.webp");
+const chery8 = require("img/cars/cheryTigo2/chery_tigo2_lateral_back_right.webp");
+const chery9 = require("img/cars/cheryTigo2/chery_tigo2_lateral_front_left.webp");
+const chery10 = require("img/cars/cheryTigo2/chery_tigo2_lateral_front_right.webp");
+const chery11 = require("img/cars/cheryTigo2/chery_tigo2_passenger_seat_right.webp");
+const chery12 = require("img/cars/cheryTigo2/chery_tigo2_pilot_seat_left.webp");
+const chery13 = require("img/cars/cheryTigo2/chery_tigo2_steering_wheel.webp");
 
-const kiaSportageBack = require("../src/assets/img/cars/kiaSportage/kia_sportage_back.webp");
-const kiaSportageCentralPanel = require("../src/assets/img/cars/kiaSportage/kia_sportage_central_panel.webp");
-const kiaSportageCopilotSeat = require("../src/assets/img/cars/kiaSportage/kia_sportage_copilot_seat_right.webp");
-const kiaSportageCover = require("../src/assets/img/cars/kiaSportage/kia_sportage_cover.webp");
-const kiaSportageExtra = require("../src/assets/img/cars/kiaSportage/kia_sportage_extra.webp");
-const kiaSportageLateralBackLeft = require("../src/assets/img/cars/kiaSportage/kia_sportage_lateral_back_left.webp");
-const kiaSportageLateralBackRight = require("../src/assets/img/cars/kiaSportage/kia_sportage_lateral_back_right.webp");
-const kiaSportageLateralFrontLeft = require("../src/assets/img/cars/kiaSportage/kia_sportage_lateral_front_left.webp");
-const kiaSportageLateralFrontRight = require("../src/assets/img/cars/kiaSportage/kia_sportage_lateral_front_right.webp");
-const kiaSportagePassengerSeatLeft = require("../src/assets/img/cars/kiaSportage/kia_sportage_passenger_seat_left.webp");
-const kiaSportagePassengerSeatRight = require("../src/assets/img/cars/kiaSportage/kia_sportage_passenger_seat_right.webp");
-const kiaSportagePilotSeat = require("../src/assets/img/cars/kiaSportage/kia_sportage_pilot_seat_left.webp");
-const kiaSportageSteeringWheel = require("../src/assets/img/cars/kiaSportage/kia_sportage_steering_wheel.webp");
+const kia1 = require("img/cars/kiaSportage/kia_sportage_cover.webp");
+const kia2 = require("img/cars/kiaSportage/kia_sportage_back.webp");
+const kia3 = require("img/cars/kiaSportage/kia_sportage_central_panel.webp");
+const kia4 = require("img/cars/kiaSportage/kia_sportage_copilot_seat_right.webp");
+const kia5 = require("img/cars/kiaSportage/kia_sportage_extra.webp");
+const kia6 = require("img/cars/kiaSportage/kia_sportage_lateral_back_left.webp");
+const kia7 = require("img/cars/kiaSportage/kia_sportage_lateral_back_right.webp");
+const kia8 = require("img/cars/kiaSportage/kia_sportage_lateral_front_left.webp");
+const kia9 = require("img/cars/kiaSportage/kia_sportage_lateral_front_right.webp");
+const kia10 = require("img/cars/kiaSportage/kia_sportage_passenger_seat_left.webp");
+const kia11 = require("img/cars/kiaSportage/kia_sportage_passenger_seat_right.webp");
+const kia12 = require("img/cars/kiaSportage/kia_sportage_pilot_seat_left.webp");
+const kia13 = require("img/cars/kiaSportage/kia_sportage_steering_wheel.webp");
 
-const nissanVersaBack = require("../src/assets/img/cars/nissanVersa/nissan_versa_back.webp");
-const nissanVersaCentralPanel = require("../src/assets/img/cars/nissanVersa/nissan_versa_central_panel.webp");
-const nissanVersaCopilotSeat = require("../src/assets/img/cars/nissanVersa/nissan_versa_copilot_seat_right.webp");
-const nissanVersaCover = require("../src/assets/img/cars/nissanVersa/nissan_versa_cover.webp");
-const nissanVersaExtra = require("../src/assets/img/cars/nissanVersa/nissan_versa_extra.webp");
-const nissanVersaLateralBackLeft = require("../src/assets/img/cars/nissanVersa/nissan_versa_lateral_back_left.webp");
-const nissanVersaLateralFrontLeft = require("../src/assets/img/cars/nissanVersa/nissan_versa_lateral_front_left.webp");
-const nissanVersaPassengerSeatLeft = require("../src/assets/img/cars/nissanVersa/nissan_versa_passenger_seat_left.webp");
-const nissanVersaPassengerSeatRight = require("../src/assets/img/cars/nissanVersa/nissan_versa_passenger_seat_right.webp");
-const nissanVersaPilotSeat = require("../src/assets/img/cars/nissanVersa/nissan_versa_pilot_seat_left.webp");
-const nissanVersaSteeringWheel = require("../src/assets/img/cars/nissanVersa/nissan_versa_steering_wheel.webp");
-const nissanVersaTrunk = require("../src/assets/img/cars/nissanVersa/nissan_versa_trunk.webp");
+const nissan1 = require("img/cars/nissanVersa/nissan_versa_cover.webp");
+const nissan2 = require("img/cars/nissanVersa/nissan_versa_back.webp");
+const nissan3 = require("img/cars/nissanVersa/nissan_versa_central_panel.webp");
+const nissan4 = require("img/cars/nissanVersa/nissan_versa_copilot_seat_right.webp");
+const nissan5 = require("img/cars/nissanVersa/nissan_versa_extra.webp");
+const nissan6 = require("img/cars/nissanVersa/nissan_versa_lateral_back_left.webp");
+const nissan7 = require("img/cars/nissanVersa/nissan_versa_lateral_front_left.webp");
+const nissan8 = require("img/cars/nissanVersa/nissan_versa_passenger_seat_left.webp");
+const nissan9 = require("img/cars/nissanVersa/nissan_versa_passenger_seat_right.webp");
+const nissan10 = require("img/cars/nissanVersa/nissan_versa_pilot_seat_left.webp");
+const nissan11 = require("img/cars/nissanVersa/nissan_versa_steering_wheel.webp");
+const nissan12 = require("img/cars/nissanVersa/nissan_versa_trunk.webp");
 
-const renaultKoleosBack = require("../src/assets/img/cars/renaultKoleos/renault_koleos_back.webp");
-const renaultKoleosCentralPanel = require("../src/assets/img/cars/renaultKoleos/renault_koleos_central_panel.webp");
-const renaultKoleosCopilotSeat = require("../src/assets/img/cars/renaultKoleos/renault_koleos_copilot_seat_right.webp");
-const renaultKoleosCover = require("../src/assets/img/cars/renaultKoleos/renault_koleos_cover.webp");
-const renaultKoleosLateralBackLeft = require("../src/assets/img/cars/renaultKoleos/renault_koleos_lateral_back_left.webp");
-const renaultKoleosLateralBackRight = require("../src/assets/img/cars/renaultKoleos/renault_koleos_lateral_back_right.webp");
-const renaultKoleosLateralFrontLeft = require("../src/assets/img/cars/renaultKoleos/renault_koleos_lateral_front_left.webp");
-const renaultKoleosPanoramicInside = require("../src/assets/img/cars/renaultKoleos/renault_koleos_panoramic_inside.webp");
-const renaultKoleosPassengerSeatLeft = require("../src/assets/img/cars/renaultKoleos/renault_koleos_passenger_seat_left.webp");
-const renaultKoleosPassengerSeatRight = require("../src/assets/img/cars/renaultKoleos/renault_koleos_passenger_seat_right.webp");
-const renaultKoleosPilotSeat = require("../src/assets/img/cars/renaultKoleos/renault_koleos_pilot_seat_left.webp");
-const renaultKoleosRoof = require("../src/assets/img/cars/renaultKoleos/renault_koleos_roof.webp");
-const renaultKoleosSteeringWheel = require("../src/assets/img/cars/renaultKoleos/renault_koleos_steering_wheel.webp");
-const renaultKoleosTrunk = require("../src/assets/img/cars/renaultKoleos/renault_koleos_trunk.webp");
+const renault1 = require("img/cars/renaultKoleos/renault_koleos_cover.webp");
+const renault2 = require("img/cars/renaultKoleos/renault_koleos_back.webp");
+const renault3 = require("img/cars/renaultKoleos/renault_koleos_central_panel.webp");
+const renault4 = require("img/cars/renaultKoleos/renault_koleos_copilot_seat_right.webp");
+const renault5 = require("img/cars/renaultKoleos/renault_koleos_lateral_back_left.webp");
+const renault6 = require("img/cars/renaultKoleos/renault_koleos_lateral_back_right.webp");
+const renault7 = require("img/cars/renaultKoleos/renault_koleos_lateral_front_left.webp");
+const renault8 = require("img/cars/renaultKoleos/renault_koleos_panoramic_inside.webp");
+const renault9 = require("img/cars/renaultKoleos/renault_koleos_passenger_seat_left.webp");
+const renault10 = require("img/cars/renaultKoleos/renault_koleos_passenger_seat_right.webp");
+const renault11 = require("img/cars/renaultKoleos/renault_koleos_pilot_seat_left.webp");
+const renault12 = require("img/cars/renaultKoleos/renault_koleos_roof.webp");
+const renault13 = require("img/cars/renaultKoleos/renault_koleos_steering_wheel.webp");
+const renault14 = require("img/cars/renaultKoleos/renault_koleos_trunk.webp");
 
-const subaruImprezaBack = require("../src/assets/img/cars/subaruImpreza/subaru_impreza_back.webp");
-const subaruImprezaCentralPanel = require("../src/assets/img/cars/subaruImpreza/subaru_impreza_central_panel.webp");
-const subaruImprezaCopilotSeat = require("../src/assets/img/cars/subaruImpreza/subaru_impreza_copilot_seat_right.webp");
-const subaruImprezaCover = require("../src/assets/img/cars/subaruImpreza/subaru_impreza_cover.webp");
-const subaruImprezaLateralBackLeft = require("../src/assets/img/cars/subaruImpreza/subaru_impreza_lateral_back_left.webp");
-const subaruImprezaLateralFrontLeft = require("../src/assets/img/cars/subaruImpreza/subaru_impreza_lateral_front_left.webp");
-const subaruImprezaLateralFrontRight = require("../src/assets/img/cars/subaruImpreza/subaru_impreza_lateral_front_right.webp");
-const subaruImprezaPassengerSeatLeft = require("../src/assets/img/cars/subaruImpreza/subaru_impreza_passenger_seat_left.webp");
-const subaruImprezaPassengerSeatRight = require("../src/assets/img/cars/subaruImpreza/subaru_impreza_passenger_seat_right.webp");
-const subaruImprezaPilotSeat = require("../src/assets/img/cars/subaruImpreza/subaru_impreza_pilot_seat_left.webp");
-const subaruImprezaSteeringWheel = require("../src/assets/img/cars/subaruImpreza/subaru_impreza_steering_wheel.webp");
+const subaru1 = require("img/cars/subaruImpreza/subaru_impreza_cover.webp");
+const subaru2 = require("img/cars/subaruImpreza/subaru_impreza_back.webp");
+const subaru3 = require("img/cars/subaruImpreza/subaru_impreza_central_panel.webp");
+const subaru4 = require("img/cars/subaruImpreza/subaru_impreza_copilot_seat_right.webp");
+const subaru5 = require("img/cars/subaruImpreza/subaru_impreza_lateral_back_left.webp");
+const subaru6 = require("img/cars/subaruImpreza/subaru_impreza_lateral_front_left.webp");
+const subaru7 = require("img/cars/subaruImpreza/subaru_impreza_lateral_front_right.webp");
+const subaru8 = require("img/cars/subaruImpreza/subaru_impreza_passenger_seat_left.webp");
+const subaru9 = require("img/cars/subaruImpreza/subaru_impreza_passenger_seat_right.webp");
+const subaru10 = require("img/cars/subaruImpreza/subaru_impreza_pilot_seat_left.webp");
+const subaru11 = require("img/cars/subaruImpreza/subaru_impreza_steering_wheel.webp");
 
 exports.dataCars = [
   {
     id: 1,
     photos: [
-      cheryTigo2Cover,
-      cheryTigo2PassengerSeatLeft,
-      cheryTigo2Back,
-      cheryTigo2CentralPanel,
-      cheryTigo2CopilotSeat,
-      cheryTigo2Extra,
-      cheryTigo2LateralBackLeft,
-      cheryTigoLateralBackRight,
-      cheryTigo2LateralFrontLeft,
-      cheryTigoLateralFrontRight,
-      cheryTigo2PassengerSeatRight,
-      cheryTigo2PilotSeat,
-      cheryTigo2SteeringWheel,
+      chery1,
+      chery2,
+      chery3,
+      chery4,
+      chery5,
+      chery6,
+      chery7,
+      chery8,
+      chery9,
+      chery10,
+      chery11,
+      chery12,
+      chery13,
     ],
     name: "Chery Tiggo 2",
     year: 2019,
@@ -104,20 +104,20 @@ exports.dataCars = [
   {
     id: 2,
     photos: [
-      nissanVersaCover,
-      nissanVersaBack,
-      nissanVersaCentralPanel,
-      nissanVersaCopilotSeat,
-      nissanVersaExtra,
-      nissanVersaLateralBackLeft,
-      nissanVersaLateralFrontLeft,
-      nissanVersaPassengerSeatLeft,
-      nissanVersaPassengerSeatRight,
-      nissanVersaPilotSeat,
-      nissanVersaSteeringWheel,
-      nissanVersaTrunk,
+      nissan1,
+      nissan2,
+      nissan3,
+      nissan4,
+      nissan5,
+      nissan6,
+      nissan7,
+      nissan8,
+      nissan9,
+      nissan10,
+      nissan11,
+      nissan12,
     ],
-    name: "Nissan Versa Sense 1.6 MT 2021",
+    name: "Nissan Versa Sense 2021",
     year: 2021,
     brand: "Nissan",
     model: "Versa",
@@ -131,26 +131,27 @@ exports.dataCars = [
     doors: 4,
     type: "Sedan",
     keys: 2,
-    description: "",
+    description:
+      "La tecnología del Nuevo Nissan Versa hace cada momento tras el volante más sencillo, seguro y disfrutable. Las asistencias de manejo te ayudaran a prevenir cualquier problema, e incluso pueden intervenir por ti de ser necesario. Y cuando se trata de manejar, su estilo emocionante y rendimiento de hasta 20.1 km/L en carretera son todos tuyos. Así es como debe sentirse la tecnología.",
   },
   {
     id: 3,
     photos: [
-      kiaSportageCover,
-      kiaSportageBack,
-      kiaSportageCentralPanel,
-      kiaSportageCopilotSeat,
-      kiaSportageExtra,
-      kiaSportageLateralBackLeft,
-      kiaSportageLateralBackRight,
-      kiaSportageLateralFrontLeft,
-      kiaSportageLateralFrontRight,
-      kiaSportagePassengerSeatLeft,
-      kiaSportagePassengerSeatRight,
-      kiaSportagePilotSeat,
-      kiaSportageSteeringWheel,
+      kia1,
+      kia2,
+      kia3,
+      kia4,
+      kia5,
+      kia6,
+      kia7,
+      kia8,
+      kia9,
+      kia10,
+      kia11,
+      kia12,
+      kia13,
     ],
-    name: "Kia Sportage QL 2.0 AUT 2021",
+    name: "Kia Sportage QL AUT 2021",
     year: 2021,
     brand: "Kia",
     model: "Sportage",
@@ -164,22 +165,23 @@ exports.dataCars = [
     doors: 5,
     type: "suv",
     keys: 2,
-    description: "",
+    description:
+      "Las superficies de conducción cambian inesperadamente cuando estás en movimiento. El Sportage responde a estos cambios rápidamente. Utilizando la última tecnología de detección y estabilidad. Alternativas de motorización que te permitirán disfrutar de cada viaje al máximo.",
   },
   {
     id: 4,
     photos: [
-      subaruImprezaCover,
-      subaruImprezaBack,
-      subaruImprezaCentralPanel,
-      subaruImprezaCopilotSeat,
-      subaruImprezaLateralBackLeft,
-      subaruImprezaLateralFrontLeft,
-      subaruImprezaLateralFrontRight,
-      subaruImprezaPassengerSeatLeft,
-      subaruImprezaPassengerSeatRight,
-      subaruImprezaPilotSeat,
-      subaruImprezaSteeringWheel,
+      subaru1,
+      subaru2,
+      subaru3,
+      subaru4,
+      subaru5,
+      subaru6,
+      subaru7,
+      subaru8,
+      subaru9,
+      subaru10,
+      subaru11,
     ],
     name: "Subaru Impreza",
     year: 2019,
@@ -195,25 +197,26 @@ exports.dataCars = [
     doors: 4,
     type: "Sedan",
     keys: 2,
-    description: "",
+    description:
+      "¿Necesitas inspiración?, Confianza, seguridad y rendimiento son primordiales en tu vida activa. El Subaru Impreza inspira a salir y vivir una vida más entretenida y agradable, con toda la confianza y tecnología única de Subaru",
   },
   {
     id: 5,
     photos: [
-      renaultKoleosCover,
-      renaultKoleosBack,
-      renaultKoleosCentralPanel,
-      renaultKoleosCopilotSeat,
-      renaultKoleosLateralBackLeft,
-      renaultKoleosLateralBackRight,
-      renaultKoleosLateralFrontLeft,
-      renaultKoleosPanoramicInside,
-      renaultKoleosPassengerSeatLeft,
-      renaultKoleosPassengerSeatRight,
-      renaultKoleosPilotSeat,
-      renaultKoleosRoof,
-      renaultKoleosSteeringWheel,
-      renaultKoleosTrunk,
+      renault1,
+      renault2,
+      renault3,
+      renault4,
+      renault5,
+      renault6,
+      renault7,
+      renault8,
+      renault9,
+      renault10,
+      renault11,
+      renault12,
+      renault13,
+      renault14,
     ],
     name: "Renault Koleos 2.5 AT 2014",
     year: 2014,
@@ -229,6 +232,7 @@ exports.dataCars = [
     doors: 5,
     type: "Suv",
     keys: 2,
-    description: "",
+    description:
+      "¿Eres un aventurero?, El Renault Koleos es tu compañero perfecto de aventuras. Amplio espacio interior, gran capacidad de carga y un diseño que te hará sentir cómodo en cualquier terreno. Cotiza con nosotros y conoce todas las ventajas de este vehículo.",
   },
 ];
