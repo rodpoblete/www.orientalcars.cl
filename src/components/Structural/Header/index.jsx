@@ -82,7 +82,7 @@ export default function SearchAppBar() {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           />
-          <Search>
+          <Search sx={{ visibility: "hidden" }}>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
