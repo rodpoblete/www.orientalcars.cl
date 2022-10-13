@@ -1,0 +1,43 @@
+{
+  "extends": [
+    "airbnb",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier",
+    "react-hooks"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error"
+    ],
+    "react/prop-types": [
+      "off"
+    ],
+    "react/jsx-fragments": [
+      "off"
+    ],
+    "react/jsx-wrap-multilines": [
+      "error",
+      {
+        "prop": "ignore"
+      }
+    ],
+    "no-console": "error"
+  },
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "test": true,
+    "expect": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 11
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": "webpack"
+    }
+  }
+}
