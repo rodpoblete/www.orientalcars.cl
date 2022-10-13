@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import { css, jsx } from "@emotion/react";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import Link from "@mui/material/Link";
 import { StyledLogo } from "../Header/index";
 import logo from "../../../assets/img/logo/logo_min.svg";
 
@@ -50,14 +51,38 @@ export default function Footer() {
           alignItems="center"
           justifyContent="end"
         >
-          <FacebookIcon label="Orientalcars La Serena" />
-          <Typography variant="h8" css={cssTitle}>
-            Orientalcars La Serena{" "}
-          </Typography>
-          <InstagramIcon />
-          <Typography variant="h8" css={cssTitle}>
-            @Orientalcarltda{" "}
-          </Typography>
+          <Link
+            href="https://www.facebook.com/profile.php?id=100079471036924"
+            color="inherit"
+            target="_blank"
+            rel="noopener"
+            sx={{
+              textDecoration: "none",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <FacebookIcon label="Orientalcars La Serena" />
+            <Typography variant="h8" css={cssTitle}>
+              Orientalcars La Serena{" "}
+            </Typography>
+          </Link>
+          <Link
+            href="https://www.instagram.com/orientalcarltda_autoshopping/"
+            color="inherit"
+            target="_blank"
+            rel="noopener"
+            sx={{
+              textDecoration: "none",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <InstagramIcon />
+            <Typography variant="h8" css={cssTitle}>
+              @Orientalcarltda{" "}
+            </Typography>
+          </Link>
         </Grid>
       </Grid>
       <Grid container css={cssBootomLine} alignContent="center">
