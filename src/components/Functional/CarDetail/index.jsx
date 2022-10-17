@@ -132,27 +132,27 @@ export default function carDetail() {
         <Grid item xs={12} align="center">
           <Typography variant="h6">Características Adicionales</Typography>
         </Grid>
-        <Grid item xs={2} align="center">
+        <Grid item xs={4} align="center">
           <CircleNotificationsIcon />
           <Typography variant="body2">Alarma</Typography>
         </Grid>
-        <Grid item xs={2} align="center">
+        <Grid item xs={4} align="center">
           <LightModeIcon />
           <Typography variant="body2">Sensor de luz</Typography>
         </Grid>
-        <Grid item xs={2} align="center">
+        <Grid item xs={4} align="center">
           <BluetoothIcon />
           <Typography variant="body2">Bluetooth</Typography>
         </Grid>
-        <Grid item xs={2} align="center">
+        <Grid item xs={4} align="center">
           <AcUnitIcon />
           <Typography variant="body2">Climatizador</Typography>
         </Grid>
-        <Grid item xs={2} align="center">
+        <Grid item xs={4} align="center">
           <CameraswitchIcon />
           <Typography variant="body2">Cámara de retroceso</Typography>
         </Grid>
-        <Grid item xs={2} align="center">
+        <Grid item xs={4} align="center">
           <WarningAmberIcon />
           <Typography variant="body2">Sensor de proximidad</Typography>
         </Grid>
