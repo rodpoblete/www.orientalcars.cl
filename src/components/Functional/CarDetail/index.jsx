@@ -103,27 +103,27 @@ export default function carDetail() {
           <Divider />
         </Grid>
         <Grid item xs={4} align="center">
-          <Typography display="inline">Marca: </Typography>
+          <Typography>Marca: </Typography>
           <Chip label={selectedCar.brand} color="primary" />
         </Grid>
         <Grid item xs={4} align="center">
-          <Typography display="inline">Año: </Typography>
+          <Typography>Año: </Typography>
           <Chip label={selectedCar.year} color="primary" />
         </Grid>
         <Grid item xs={4} align="center">
-          <Typography display="inline">Modelo: </Typography>
+          <Typography>Modelo: </Typography>
           <Chip label={selectedCar.model} color="primary" />
         </Grid>
         <Grid item xs={4} align="center">
-          <Typography display="inline">Dueños: </Typography>
+          <Typography>Dueños: </Typography>
           <Chip label={selectedCar.owners} color="primary" />
         </Grid>
         <Grid item xs={4} align="center">
-          <Typography display="inline">Versión: </Typography>
+          <Typography>Versión: </Typography>
           <Chip label={selectedCar.version} color="primary" />
         </Grid>
         <Grid item xs={4} align="center">
-          <Typography display="inline">Llaves: </Typography>
+          <Typography>Llaves: </Typography>
           <Chip label={selectedCar.keys} color="primary" />
         </Grid>
         <Grid item xs={12}>
