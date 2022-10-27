@@ -12,7 +12,7 @@ import { moneyFormat } from "helpers/numbers";
 export default function CarCard({ carData }) {
   const { id, photos, name, price, description } = carData;
   return (
-    <Grid item xs={6} sm={4} md={3}>
+    <Grid item xs={12} sx={{ paddingBottom: "1px" }}>
       <Card>
         <CardActionArea>
           <CardMedia
