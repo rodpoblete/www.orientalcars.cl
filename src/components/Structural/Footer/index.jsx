@@ -86,7 +86,7 @@ export default function Footer() {
         </Grid>
       </Grid>
       <Grid container css={cssBootomLine} alignContent="center">
-        <Grid item xs={12} align="center">
+        <Grid item xs={12} align="center" sx={{ marginTop: "10px" }}>
           <Typography variant="caption" display="block" gutterBottom>
             © {new Date().getFullYear()} Oriental Cars – Automotora compra,
             venta y consignaciones
