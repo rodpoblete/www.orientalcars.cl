@@ -2,7 +2,7 @@ import React from "react";
 
 import Grid from "@mui/material/Grid";
 
-import { Autoplay, Navigation } from "swiper";
+import { Autoplay, Navigation, Pagination } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,33 +11,59 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import CarCard from "../CarCard/index";
-
+import CarIconSlide from "../CarIconSlide/index";
 import { dataCars } from "../../../../dataCars";
 
 export default function Home() {
   return (
     <Grid container maxWidth="md" sx={{ paddingLeft: 1, paddingRight: 1 }}>
-      <Swiper
-        breakpoints={{
-          320: { slidesPerView: 2, spaceBetween: 10 },
-          480: { slidesPerView: 3, spaceBetween: 15 },
-          768: { slidesPerView: 4, spaceBetween: 20 },
-          1024: { slidesPerView: 4, spaceBetween: 25 },
-        }}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        loop
-        navigation
-        modules={[Autoplay, Navigation]}
-      >
-        {dataCars.map((car) => (
-          <SwiperSlide key={car.id}>
-            <CarCard key={car.id} carData={car} />
+      <Grid item xs={12}>
+        <Swiper
+          slidesPerView={4}
+          spaceBetween={10}
+          pagination={{
+            clickable: true,
+          }}
+          navigation
+          modules={[Pagination]}
+        >
+          <SwiperSlide>
+            <CarIconSlide />
           </SwiperSlide>
-        ))}
-      </Swiper>
+          <SwiperSlide>
+            <CarIconSlide />
+          </SwiperSlide>
+          <SwiperSlide>
+            <CarIconSlide />
+          </SwiperSlide>
+          <SwiperSlide>
+            <CarIconSlide />
+          </SwiperSlide>
+        </Swiper>
+      </Grid>
+      <Grid item xs={12}>
+        <Swiper
+          breakpoints={{
+            320: { slidesPerView: 2, spaceBetween: 10 },
+            480: { slidesPerView: 3, spaceBetween: 15 },
+            768: { slidesPerView: 4, spaceBetween: 20 },
+            1024: { slidesPerView: 4, spaceBetween: 25 },
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          loop
+          navigation
+          modules={[Autoplay, Navigation]}
+        >
+          {dataCars.map((car) => (
+            <SwiperSlide key={car.id}>
+              <CarCard key={car.id} carData={car} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </Grid>
     </Grid>
   );
 }
