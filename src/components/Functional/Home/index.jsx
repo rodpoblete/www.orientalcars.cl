@@ -2,7 +2,7 @@ import React from "react";
 
 import Grid from "@mui/material/Grid";
 
-import { Autoplay, Navigation, Pagination } from "swiper";
+import { Autoplay, Navigation } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,35 +11,14 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import CarCard from "../CarCard/index";
-import CarIconSlide from "../CarIconSlide/index";
+import SliderPrincipal from "../SliderPrincipal/index";
 import { dataCars } from "../../../../dataCars";
 
 export default function Home() {
   return (
     <Grid container maxWidth="md" sx={{ paddingLeft: 1, paddingRight: 1 }}>
       <Grid item xs={12}>
-        <Swiper
-          slidesPerView={4}
-          spaceBetween={10}
-          pagination={{
-            clickable: true,
-          }}
-          navigation
-          modules={[Pagination]}
-        >
-          <SwiperSlide>
-            <CarIconSlide />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CarIconSlide />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CarIconSlide />
-          </SwiperSlide>
-          <SwiperSlide>
-            <CarIconSlide />
-          </SwiperSlide>
-        </Swiper>
+        <SliderPrincipal />
       </Grid>
       <Grid item xs={12}>
         <Swiper
