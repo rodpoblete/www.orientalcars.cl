@@ -20,7 +20,7 @@ const offer5 = require("img/cars/subaruImpreza/subaru_impreza_cover.webp");
 
 const carOfferImages = [offer1, offer2, offer3, offer4, offer5];
 
-export default function carPrincipalSlide() {
+export default function SliderPrincipal() {
   return (
     <>
       <Typography
@@ -57,7 +57,7 @@ export default function carPrincipalSlide() {
               sx={{
                 width: "100%",
                 height: "100%",
-                maxHeight: "500px",
+                maxHeight: "300px",
                 objectFit: "cover",
                 objectPosition: "center center",
               }}
