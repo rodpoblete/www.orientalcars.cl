@@ -6,19 +6,29 @@ const salesWallpaper = require("img/backgrounds/salesWallpaper.webp");
 
 export default function SalesSection() {
   return (
-    <Box>
+    <Box
+      sx={{
+        height: "300px",
+        display: "flex",
+        flexDirection: "column",
+        position: "relative",
+      }}
+    >
       <Box
         component="img"
         src={salesWallpaper}
         sx={{
           width: "100vw",
-          height: 300,
+          height: "300px",
           objectFit: "cover",
           objectPosition: "center center",
           filter: "brightness(0.5)",
+          position: "absolute",
         }}
       />
-      <Typography sx={{ position: "relative" }}> TEXTO DE PRUEBA</Typography>
+      <Typography sx={{ position: "relative", zIndex: 1, color: "white" }}>
+        TEXTO DE PRUEBA
+      </Typography>
     </Box>
   );
 }
