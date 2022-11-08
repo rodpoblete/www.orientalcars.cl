@@ -17,7 +17,9 @@ export default function Home() {
           <SliderCarCard />
         </Grid>
       </Grid>
-      <SalesSection />
+      <Grid item xs={12}>
+        <SalesSection />
+      </Grid>
     </>
   );
 }
