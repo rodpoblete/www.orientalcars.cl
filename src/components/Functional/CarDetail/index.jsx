@@ -42,7 +42,14 @@ export default function carDetail() {
 
   return (
     <Container maxWidth="md">
-      <Grid container rowSpacing={4}>
+      <Grid
+        container
+        rowSpacing={4}
+        sx={{
+          paddingTop: { xs: "30px", sm: "20px" },
+          paddingBottom: { xs: "30px", sm: "20px" },
+        }}
+      >
         <Grid item xs={12}>
           <Box sx={{ textAlign: "center" }}>
             <Swiper

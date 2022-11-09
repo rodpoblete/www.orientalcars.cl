@@ -37,16 +37,7 @@ export default function Main() {
       <Grid container justifyContent="center">
         <CssBaseline />
         <Header />
-        <Grid
-          container
-          justifyContent="center"
-          sx={{
-            marginLeft: 1,
-            marginRight: 1,
-            paddingTop: { xs: "30px", sm: "20px" },
-            paddingBottom: { xs: "30px", sm: "20px" },
-          }}
-        >
+        <Grid container justifyContent="center" sx={{}}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/detalle/:carId" element={<CarDetail />} />
