@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -22,49 +22,30 @@ const carOfferImages = [offer1, offer2, offer3, offer4, offer5];
 
 export default function SliderPrincipal() {
   return (
-    <>
-      <Typography
-        variant="h6"
-        color="primary"
-        align="center"
-        sx={{ fontWeight: "bold" }}
-      >
-        NUESTRA SELECCIÓN DEL MES
-      </Typography>
-      <Typography
-        variant="subtitle1"
-        color="primary"
-        align="center"
-        gutterBottom
-      >
-        Ven a descubrir nuestra selección del mes. Vehículos especialmente
-        escogidos para ti
-      </Typography>
-      <Swiper
-        spaceBetween={30}
-        centeredSlides
-        pagination={{
-          clickable: true,
-        }}
-        navigation
-        modules={[Pagination, Navigation]}
-      >
-        {carOfferImages.map((photo) => (
-          <SwiperSlide key={photo}>
-            <Box
-              component="img"
-              src={photo}
-              sx={{
-                width: "100%",
-                height: "100%",
-                maxHeight: "300px",
-                objectFit: "cover",
-                objectPosition: "center center",
-              }}
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </>
+    <Swiper
+      spaceBetween={30}
+      centeredSlides
+      pagination={{
+        clickable: true,
+      }}
+      navigation
+      modules={[Pagination, Navigation]}
+    >
+      {carOfferImages.map((photo) => (
+        <SwiperSlide key={photo}>
+          <Box
+            component="img"
+            src={photo}
+            sx={{
+              width: "100%",
+              height: "100%",
+              maxHeight: "300px",
+              objectFit: "cover",
+              objectPosition: "center center",
+            }}
+          />
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
 }
