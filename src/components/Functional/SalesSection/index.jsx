@@ -30,14 +30,18 @@ export default function SalesSection() {
         }}
       />
       <Typography
+        variant="h3"
         align="center"
         mb={1}
         sx={{
-          fontSize: "2.5rem",
           position: "relative",
           zIndex: 1,
           color: "white",
           fontWeight: "bold",
+          fontSize: {
+            xs: 26,
+            sm: 40,
+          },
         }}
       >
         ¿Quieres vender tu vehículo?
@@ -49,6 +53,10 @@ export default function SalesSection() {
           position: "relative",
           zIndex: 1,
           color: "white",
+          fontSize: {
+            xs: 20,
+            sm: 24,
+          },
         }}
       >
         Te ayudamos con la venta de tu auto
@@ -61,6 +69,10 @@ export default function SalesSection() {
           zIndex: 1,
           color: "white",
           display: "inline",
+          fontSize: {
+            xs: 13,
+            sm: 16,
+          },
         }}
       >
         Podemos ofrecerte distintas alternativas, como la venta directa
@@ -74,11 +86,19 @@ export default function SalesSection() {
           zIndex: 1,
           color: "white",
           display: "inline",
+          fontSize: {
+            xs: 13,
+            sm: 16,
+          },
         }}
       >
         o la consignación (te ayudamos a venderlo al mejor precio)
       </Typography>
-      <Button variant="contained" color="secondary">
+      <Button
+        variant="contained"
+        color="secondary"
+        sx={{ visibility: "hidden" }}
+      >
         Más Información
       </Button>
     </Box>
