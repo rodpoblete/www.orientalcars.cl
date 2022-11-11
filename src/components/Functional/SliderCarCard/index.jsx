@@ -18,9 +18,10 @@ export default function SliderCarCard() {
   return (
     <>
       <Typography
+        variant="h5"
         align="center"
         color="primary"
-        sx={{ fontSize: "1.7rem", fontWeight: "bold" }}
+        sx={{ fontWeight: "bold" }}
       >
         Nuestros Autos
       </Typography>
