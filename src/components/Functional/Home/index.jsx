@@ -10,10 +10,10 @@ export default function Home() {
   return (
     <>
       <Grid container maxWidth="md" sx={{ paddingLeft: 1, paddingRight: 1 }}>
-        <Grid item xs={12}>
+        <Grid item xs={12} mt={3}>
           <SliderPrincipal />
         </Grid>
-        <Grid item xs={12}>
+        <Grid item xs={12} mb={2}>
           <SliderCarCard />
         </Grid>
       </Grid>
