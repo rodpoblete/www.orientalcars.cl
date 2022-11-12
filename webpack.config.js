@@ -1,3 +1,4 @@
+const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 const path = require("path");
@@ -58,5 +59,10 @@ module.exports = {
     port: 5007,
     historyApiFallback: true,
   },
-  plugins: [new HtmlWebpackPlugin({ template: "./src/assets/index.html" })],
+  plugins: [
+    new HtmlWebpackPlugin({ template: "./src/assets/index.html" }),
+    new CopyPlugin({
+      patterns: [{ from: "./src/assets/img/favicon", to: "./favicon" }],
+    }),
+  ],
 };

@@ -16,16 +16,6 @@ import Footer from "../Footer";
 import Home from "../../Functional/Home";
 import CarDetail from "../../Functional/CarDetail";
 
-const cssMain = (theme) =>
-  css({
-    paddingTop: "20px",
-    paddingBottom: "20px",
-    [theme.breakpoints.down("sm")]: {
-      paddingTop: "30px",
-      paddingBottom: "30px",
-    },
-  });
-
 const root = css({
   display: "flex",
   flexDirection: "column",
@@ -47,7 +37,7 @@ export default function Main() {
       <Grid container justifyContent="center">
         <CssBaseline />
         <Header />
-        <Grid container justifyContent="center" css={cssMain}>
+        <Grid container justifyContent="center">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/detalle/:carId" element={<CarDetail />} />
