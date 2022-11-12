@@ -51,7 +51,11 @@ export default function SliderCarCard() {
         ))}
       </Swiper>
       <Grid mt={2} mb={2} sx={{ display: "flex", justifyContent: "center" }}>
-        <Button variant="contained" color="secondary">
+        <Button
+          variant="contained"
+          color="secondary"
+          sx={{ visibility: "hidden" }}
+        >
           Modelos Disponibles
         </Button>
       </Grid>
