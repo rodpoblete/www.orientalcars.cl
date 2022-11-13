@@ -12,7 +12,7 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper";
 
 // import car offer images
-const offer1 = require("img/cars/cheryTigo2/chery_tigo2_cover.webp");
+const offer1 = require("img/backgrounds/offerWallpaper.webp");
 const offer2 = require("img/cars/kiaSportage/kia_sportage_cover.webp");
 const offer3 = require("img/cars/nissanVersa/nissan_versa_cover.webp");
 const offer4 = require("img/cars/renaultKoleos/renault_koleos_cover.webp");
