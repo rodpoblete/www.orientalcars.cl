@@ -37,10 +37,11 @@ export default function AllCarsSection() {
             fontWeight: "bold",
           }}
         >
-          Conoce nuestro catalogo
+          Conoce Nuestro Catálogo
         </Typography>
         <Typography
           align="center"
+          color="primary.light"
           sx={{
             fontSize: {
               xs: 13,
