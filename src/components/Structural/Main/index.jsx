@@ -15,6 +15,7 @@ import Footer from "../Footer";
 /** Functional components */
 import Home from "../../Functional/Home";
 import CarDetail from "../../Functional/CarDetail";
+import AllCarsSection from "../../Functional/AllCarsSection";
 
 const root = css({
   display: "flex",
@@ -41,6 +42,7 @@ export default function Main() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/detalle/:carId" element={<CarDetail />} />
+            <Route path="/catalogo" element={<AllCarsSection />} />
           </Routes>
         </Grid>
       </Grid>
