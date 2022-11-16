@@ -9,16 +9,15 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Pagination, Navigation } from "swiper";
+import { Pagination, Navigation, Autoplay } from "swiper";
 
 // import car offer images
-const offer1 = require("img/backgrounds/offerWallpaper.webp");
-const offer2 = require("img/cars/kiaSportage/kia_sportage_cover.webp");
-const offer3 = require("img/cars/nissanVersa/nissan_versa_cover.webp");
-const offer4 = require("img/cars/renaultKoleos/renault_koleos_cover.webp");
-const offer5 = require("img/cars/subaruImpreza/subaru_impreza_cover.webp");
+const offer1 = require("img/backgrounds/offer1.webp");
+const offer2 = require("img/backgrounds/offer2.webp");
+const offer3 = require("img/backgrounds/offer3.webp");
+const offer4 = require("img/backgrounds/offer4.webp");
 
-const carOfferImages = [offer1, offer2, offer3, offer4, offer5];
+const carOfferImages = [offer1, offer2, offer3, offer4];
 
 export default function SliderPrincipal() {
   return (
@@ -28,8 +27,12 @@ export default function SliderPrincipal() {
       pagination={{
         clickable: true,
       }}
+      autoplay={{
+        delay: 2000,
+        disableOnInteraction: false,
+      }}
       navigation
-      modules={[Pagination, Navigation]}
+      modules={[Pagination, Navigation, Autoplay]}
     >
       {carOfferImages.map((photo) => (
         <SwiperSlide key={photo}>
