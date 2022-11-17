@@ -35,7 +35,7 @@ export default function SalesForm() {
           Completa los datos y evaluaremos la mejor opción disponible para ti.
         </Typography>
       </Grid>
-      <Paper elevation={3}>
+      <Paper elevation={3} sx={{ padding: 2 }}>
         <Typography variant="h5"> Datos del Cliente</Typography>
         <Grid container spacing={2}>
           <Grid xs={12} sm={6} md={4} item>
