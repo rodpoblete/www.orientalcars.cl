@@ -100,6 +100,7 @@ export default function SalesSection() {
         variant="contained"
         color="secondary"
         to="/ventas"
+        sx={{ visibility: "hidden" }}
       >
         Más Información
       </Button>
