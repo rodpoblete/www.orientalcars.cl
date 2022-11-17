@@ -65,6 +65,20 @@ const subaru8 = require("img/cars/subaruImpreza/subaru_impreza_passenger_seat_le
 const subaru9 = require("img/cars/subaruImpreza/subaru_impreza_passenger_seat_right.webp");
 const subaru10 = require("img/cars/subaruImpreza/subaru_impreza_pilot_seat_left.webp");
 const subaru11 = require("img/cars/subaruImpreza/subaru_impreza_steering_wheel.webp");
+const subaru12 = require("img/cars/subaruImpreza/subaru_impreza_inside_panoramic.webp");
+
+const alto8001 = require("img/cars/suzukiAlto2022/suzuki_alto_800_glx_2022_cover.webp");
+const alto8002 = require("img/cars/suzukiAlto2022/suzuki_alto_800_glx_2022_back_panoramic.webp");
+const alto8003 = require("img/cars/suzukiAlto2022/suzuki_alto_800_glx_2022_central_panel.webp");
+const alto8004 = require("img/cars/suzukiAlto2022/suzuki_alto_800_glx_2022_inside_panoramic.webp");
+const alto8005 = require("img/cars/suzukiAlto2022/suzuki_alto_800_glx_2022_lateral_front_left.webp");
+const alto8006 = require("img/cars/suzukiAlto2022/suzuki_alto_800_glx_2022_lateral_front_right.webp");
+const alto8007 = require("img/cars/suzukiAlto2022/suzuki_alto_800_glx_2022_passenger_seat_right.webp");
+
+const altoK101 = require("img/cars/suzukiAltok102020/suzuki_alto_k10_cover.webp");
+const altoK102 = require("img/cars/suzukiAltok102020/suzuki_alto_k10_central_panel.webp");
+const altoK103 = require("img/cars/suzukiAltok102020/suzuki_alto_k10_lateral_front_right.webp");
+const altoK104 = require("img/cars/suzukiAltok102020/suzuki_alto_k10_passenger_seat_right.webp");
 
 exports.dataCars = [
   {
@@ -100,6 +114,7 @@ exports.dataCars = [
     keys: 2,
     description:
       "¿Quieres un Suv económico y rendidor?, El mini SUV Chery Tiggo 2 urbano, de diseño deportivo y excelente rendimiento, va contigo a todas partes. Con un motor 1.5L de 110 HP, 6 velocidades y un consumo de combustible de 7.5 km/l, es el vehículo ideal para moverte por la ciudad. Además, cuenta con un sistema de frenos ABS, EBD y EBA, que te brindan seguridad y confianza en la carretera. ¡No esperes más y conoce el Chery Tiggo 2!",
+    status: "sold",
   },
   {
     id: 2,
@@ -133,6 +148,7 @@ exports.dataCars = [
     keys: 2,
     description:
       "La tecnología del Nuevo Nissan Versa hace cada momento tras el volante más sencillo, seguro y disfrutable. Las asistencias de manejo te ayudaran a prevenir cualquier problema, e incluso pueden intervenir por ti de ser necesario. Y cuando se trata de manejar, su estilo emocionante y rendimiento de hasta 20.1 km/L en carretera son todos tuyos. Así es como debe sentirse la tecnología.",
+    status: "available",
   },
   {
     id: 3,
@@ -167,6 +183,7 @@ exports.dataCars = [
     keys: 2,
     description:
       "Las superficies de conducción cambian inesperadamente cuando estás en movimiento. El Sportage responde a estos cambios rápidamente. Utilizando la última tecnología de detección y estabilidad. Alternativas de motorización que te permitirán disfrutar de cada viaje al máximo.",
+    status: "sold",
   },
   {
     id: 4,
@@ -182,23 +199,25 @@ exports.dataCars = [
       subaru9,
       subaru10,
       subaru11,
+      subaru12,
     ],
-    name: "Subaru Impreza",
-    year: 2019,
+    name: "Subaru Impreza 1.6 AWD",
+    year: 2013,
     brand: "Subaru",
     model: "Impreza",
-    version: "2.0L",
-    owners: 1,
-    price: 14990000,
-    mileage: 0,
+    version: "1.6 AWD MT",
+    owners: 2,
+    price: 8990000,
+    mileage: 140000,
     fuel: "Bencina",
     transmission: "Manual",
     seats: 5,
     doors: 4,
-    type: "Sedan",
+    type: "HB",
     keys: 2,
     description:
-      "¿Necesitas inspiración?, Confianza, seguridad y rendimiento son primordiales en tu vida activa. El Subaru Impreza inspira a salir y vivir una vida más entretenida y agradable, con toda la confianza y tecnología única de Subaru",
+      "Este Sedán jamás te fallará. Amplio espacio interior que destaca por su comodidad, la seguridad y la confianza que se siente al volante. Un modelo clásico para tiempos modernos.",
+    status: "available",
   },
   {
     id: 5,
@@ -234,5 +253,77 @@ exports.dataCars = [
     keys: 2,
     description:
       "¿Eres un aventurero?, El Renault Koleos es tu compañero perfecto de aventuras. Amplio espacio interior, gran capacidad de carga y un diseño que te hará sentir cómodo en cualquier terreno. Cotiza con nosotros y conoce todas las ventajas de este vehículo.",
+    status: "sold",
   },
+  {
+    id: 6,
+    photos: [altoK101, altoK102, altoK103, altoK104],
+    name: "Suzuki Alto K10 1.0 GLX",
+    year: 2020,
+    brand: "Suzuki",
+    model: "Alto",
+    version: "K10 1.0 GLX",
+    owners: 1,
+    price: 6990000,
+    mileage: 33000,
+    fuel: "Bencina",
+    transmission: "Manual",
+    seats: 5,
+    doors: 5,
+    type: "HB",
+    keys: 1,
+    description:
+      "¿Buscar economía y rendimiento?, El Suzuki Alto es perfecto para ti. Un citycar heredero de exitosas generaciones denominadas a lo largo de la historia como Fronte, Alto, o Maruti pero diferenciándose por la cilindrada, el nivel de equipamiento, las dimensiones y la capacidad de ocupantes, la que alcanza a los 5 pasajeros.",
+    status: "available",
+  },
+  {
+    id: 7,
+    photos: [
+      alto8001,
+      alto8002,
+      alto8003,
+      alto8004,
+      alto8005,
+      alto8006,
+      alto8007,
+    ],
+    name: "Suzuki Alto 800 GLX AC",
+    year: 2022,
+    brand: "Suzuki",
+    model: "Alto",
+    version: "800 GLX AC",
+    owners: 1,
+    price: 7590000,
+    mileage: 13000,
+    fuel: "Bencina",
+    transmission: "Manual",
+    seats: 5,
+    doors: 5,
+    type: "HB",
+    keys: 2,
+    description:
+      "El Suzuki Alto 800 GLX AC es un citycar que se caracteriza por su bajo consumo de combustible, su bajo nivel de emisiones de CO2 y su bajo precio. El Alto 800 GLX AC es un vehículo de 3 puertas, con 5 plazas y un maletero de 185 litros. Considerado como el auto más barato de Chile, no te pierdas la oportunidad de tener un auto del año a un excelente precio.",
+    status: "available",
+  },
+  // {
+  //   id: 8,
+  //   photos: [],
+  //   name: "Renault Symbol 1.6 MT",
+  //   year: 2018,
+  //   brand: "Renault",
+  //   model: "Symbol",
+  //   version: "1.6 MT",
+  //   owners: 2,
+  //   price: 7990000,
+  //   mileage: 66000,
+  //   fuel: "Bencina",
+  //   transmission: "Manual",
+  //   seats: 5,
+  //   doors: 4,
+  //   type: "Sedan",
+  //   keys: 2,
+  //   description:
+  //     "¿Buscas un vehículo con todas las comodidades a un buen precio?, El Renault Symbol es el auto perfecto para ti. Cuenta con cierre centralizado, USB, vidrios delanteros eléctricos, aire acondicionado y dirección asistida. Todas las comodidades que necesitas a un inmejorable precio",
+  //   status: "available",
+  // },
 ];
