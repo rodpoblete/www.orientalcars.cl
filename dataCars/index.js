@@ -80,6 +80,14 @@ const altoK102 = require("img/cars/suzukiAltok102020/suzuki_alto_k10_central_pan
 const altoK103 = require("img/cars/suzukiAltok102020/suzuki_alto_k10_lateral_front_right.webp");
 const altoK104 = require("img/cars/suzukiAltok102020/suzuki_alto_k10_passenger_seat_right.webp");
 
+const sswift1 = require("img/cars/suzukiSwiftgl/suzuki_swift_gl_sport_cover.webp");
+const sswift2 = require("img/cars/suzukiSwiftgl/suzuki_swift_gl_sport_central_panel.webp");
+const sswift3 = require("img/cars/suzukiSwiftgl/suzuki_swift_gl_sport_inside_panoramic.webp");
+const sswift4 = require("img/cars/suzukiSwiftgl/suzuki_swift_gl_sport_lateral_back_right.webp");
+const sswift5 = require("img/cars/suzukiSwiftgl/suzuki_swift_gl_sport_lateral_front_left.webp");
+const sswift6 = require("img/cars/suzukiSwiftgl/suzuki_swift_gl_sport_lateral_front_right.webp");
+const sswift7 = require("img/cars/suzukiSwiftgl/suzuki_swift_gl_sport_passenger_seat_right.webp");
+
 exports.dataCars = [
   {
     id: 1,
@@ -326,4 +334,25 @@ exports.dataCars = [
   //     "¿Buscas un vehículo con todas las comodidades a un buen precio?, El Renault Symbol es el auto perfecto para ti. Cuenta con cierre centralizado, USB, vidrios delanteros eléctricos, aire acondicionado y dirección asistida. Todas las comodidades que necesitas a un inmejorable precio",
   //   status: "available",
   // },
+  {
+    id: 9,
+    photos: [sswift1, sswift2, sswift3, sswift4, sswift5, sswift6, sswift7],
+    name: "Suzuki Swift GL Sport",
+    year: 2022,
+    brand: "Suzuki",
+    model: "Swift",
+    version: "GL Sport 1.2",
+    owners: 1,
+    price: 10990000,
+    mileage: 18500,
+    fuel: "Bencina",
+    transmission: "Manual",
+    seats: 5,
+    doors: 5,
+    type: "HB",
+    keys: 2,
+    description:
+      "¿Buscas un modelo deportivo para moverte en la ciudad, a un precio accesible?, Conoce el Suzuki Swift Gl Sport, la combinación perfecta entre un citycar y un deportivo.",
+    status: "available",
+  },
 ];
