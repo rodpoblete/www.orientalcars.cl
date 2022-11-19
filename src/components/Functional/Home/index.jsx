@@ -4,7 +4,7 @@ import Grid from "@mui/material/Grid";
 
 import SliderPrincipal from "../SliderPrincipal/index";
 import SliderCarCard from "../SliderCarCard/index";
-import SalesSection from "../SalesSection/index";
+import PurchaseSection from "../PurchaseSection/index";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
         </Grid>
       </Grid>
       <Grid item xs={12}>
-        <SalesSection />
+        <PurchaseSection />
       </Grid>
     </>
   );
