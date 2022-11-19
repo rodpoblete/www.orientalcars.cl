@@ -173,11 +173,18 @@ export default function carDetail() {
           <Divider />
         </Grid>
         <Grid item xs={12} align="center">
-          <Typography display="inline">
+          <Typography variant="h6" color="secondary">
             ¿Necesitas opciones de financiamiento?
           </Typography>
+          <Typography variant="h7">
+            ¡Solicita tu evaluación! pie mínimo desde el 25% del valor del
+            vehículo (sujeto a evaluación crediticia)
+          </Typography>
+          <Typography>
+            Escríbenos y juntos encontraremos la mejor opción para ti.
+          </Typography>
         </Grid>
-        <Grid item xs={6} align="center" mt={8}>
+        <Grid item xs={6} align="center" mt={4}>
           <Link href="https://wa.me/56992154860">
             <Button variant="contained">
               <WhatsAppIcon />
@@ -185,7 +192,7 @@ export default function carDetail() {
             </Button>
           </Link>
         </Grid>
-        <Grid item xs={6} align="center" mt={8}>
+        <Grid item xs={6} align="center" mt={4}>
           <Link href="tel:56992154860">
             <Button variant="contained">
               <CallIcon />
