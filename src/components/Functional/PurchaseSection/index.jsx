@@ -100,7 +100,7 @@ export default function PurchaseSection() {
         component={RouterLink}
         variant="contained"
         color="secondary"
-        to="/ventas"
+        to="/financiamiento"
         sx={{ visibility: "hidden" }}
       >
         Más Información
