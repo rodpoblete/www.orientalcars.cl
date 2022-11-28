@@ -5,7 +5,7 @@ import Button from "@mui/material/Button";
 
 const salesWallpaper = require("img/backgrounds/salesWallpaper.webp");
 
-export default function SalesSection() {
+export default function PurchaseSection() {
   return (
     <Box
       sx={{
@@ -44,7 +44,7 @@ export default function SalesSection() {
           },
         }}
       >
-        ¿Quieres vender tu vehículo?
+        ¿Quieres Comprar un Vehículo?
       </Typography>
       <Typography
         align="center"
@@ -59,7 +59,7 @@ export default function SalesSection() {
           },
         }}
       >
-        Te ayudamos con la venta de tu auto
+        ¿Necesitas Financiamiento? Conoce las opciones que tenemos para ti
       </Typography>
       <Typography
         variant="h7"
@@ -75,8 +75,8 @@ export default function SalesSection() {
           },
         }}
       >
-        Podemos ofrecerte distintas alternativas, como la venta directa
-        (nosotros te lo compramos)
+        Podemos ofrecerte distintas alternativas, solicita la evaluación de tu
+        financiamiento
       </Typography>
       <Typography
         variant="h7"
@@ -92,7 +92,8 @@ export default function SalesSection() {
           },
         }}
       >
-        o la consignación (te ayudamos a venderlo al mejor precio)
+        y conoce nuestras condiciones, tanto para trabajadores dependientes como
+        independientes.
       </Typography>
       <Button
         variant="contained"

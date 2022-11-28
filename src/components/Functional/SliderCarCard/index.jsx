@@ -1,6 +1,6 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
-
+import { Link as RouterLink } from "react-router-dom";
 import { Autoplay, Navigation } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -52,9 +52,10 @@ export default function SliderCarCard() {
       </Swiper>
       <Grid mt={2} mb={2} sx={{ display: "flex", justifyContent: "center" }}>
         <Button
+          component={RouterLink}
+          to="/catalogo"
           variant="contained"
           color="secondary"
-          sx={{ visibility: "hidden" }}
         >
           Modelos Disponibles
         </Button>
