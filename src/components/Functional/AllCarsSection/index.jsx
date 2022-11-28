@@ -56,8 +56,8 @@ export default function AllCarsSection() {
       </Grid>
 
       {dataCars.map((car) => (
-        <Grid item xs={6} sm={4}>
-          <CarCard key={car.id} carData={car} />
+        <Grid item xs={6} sm={4} key={car.id}>
+          <CarCard carData={car} />
         </Grid>
       ))}
     </Grid>
