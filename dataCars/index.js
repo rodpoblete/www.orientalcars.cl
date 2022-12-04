@@ -156,7 +156,7 @@ exports.dataCars = [
     keys: 2,
     description:
       "La tecnología del Nuevo Nissan Versa hace cada momento tras el volante más sencillo, seguro y disfrutable. Las asistencias de manejo te ayudaran a prevenir cualquier problema, e incluso pueden intervenir por ti de ser necesario. Y cuando se trata de manejar, su estilo emocionante y rendimiento de hasta 20.1 km/L en carretera son todos tuyos. Así es como debe sentirse la tecnología.",
-    status: "available",
+    status: "sold",
   },
   {
     id: 3,
@@ -353,6 +353,6 @@ exports.dataCars = [
     keys: 2,
     description:
       "¿Buscas un modelo deportivo para moverte en la ciudad, a un precio accesible?, Conoce el Suzuki Swift Gl Sport, la combinación perfecta entre un citycar y un deportivo.",
-    status: "available",
+    status: "sold",
   },
 ];
