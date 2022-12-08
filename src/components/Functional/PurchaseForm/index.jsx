@@ -3,19 +3,20 @@ import TextField from "@mui/material/TextField";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import InputAdornment from "@mui/material/InputAdornment";
-import OutlinedInput from "@mui/material/OutlinedInput";
 import { Button, Paper } from "@mui/material";
 import FormControl from "@mui/material/FormControl";
+import InputLabel from "@mui/material/InputLabel";
+import Input from "@mui/material/Input";
 
 export default function PurchaseForm() {
   const [fullName, setFullName] = useState("");
   const [rut, setRut] = useState("");
-  const [birthdate, setBirthdate] = useState("");
+  const [birth, setBirth] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
   const [labor, setLabor] = useState("");
+  const [salary, setSalary] = useState("");
   const [amount, setAmount] = useState("");
-  const [fee, setFee] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -59,11 +60,11 @@ export default function PurchaseForm() {
               required
               type="date"
               label="Fecha de nacimiento"
-              value={birthdate}
+              value={birth}
               variant="standard"
               InputLabelProps={{ shrink: true }}
               fullWidth
-              onChange={(event) => setBirthdate(event.target.value)}
+              onChange={(event) => setBirth(event.target.value)}
             />
           </Grid>
           <Grid xs={12} sm={6} md={4} item>
@@ -105,25 +106,32 @@ export default function PurchaseForm() {
             />
           </Grid>
           <Grid xs={12} sm={6} md={4} item>
-            <FormControl variant="standard" fullWidth required>
-              <OutlinedInput
+            <FormControl fullWidth variant="standard">
+              <InputLabel htmlFor="standard-adornment-salary">
+                Sueldo Líquido
+              </InputLabel>
+              <Input
+                value={salary}
+                onChange={(event) => setSalary(event.target.value)}
+                startAdornment={
+                  <InputAdornment position="start">$</InputAdornment>
+                }
+              />
+            </FormControl>
+          </Grid>
+          <Grid xs={12} sm={6} md={4} item>
+            <FormControl fullWidth variant="standard">
+              <InputLabel htmlFor="standard-adornment-amount">
+                Monto del pie a abonar
+              </InputLabel>
+              <Input
                 value={amount}
                 onChange={(event) => setAmount(event.target.value)}
                 startAdornment={
                   <InputAdornment position="start">$</InputAdornment>
                 }
-                label="Amount"
               />
             </FormControl>
-          </Grid>
-          <Grid xs={12} sm={6} md={4} item>
-            <TextField
-              label="Monto del pie disponible para abonar"
-              value={fee}
-              variant="standard"
-              fullWidth
-              onChange={(event) => setFee(event.target.value)}
-            />
           </Grid>
           <Grid xs={12} align="center" mt={2} item>
             <Button variant="contained" color="secondary" type="submit">
