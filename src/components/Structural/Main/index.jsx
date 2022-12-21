@@ -16,7 +16,6 @@ import Footer from "../Footer";
 import Home from "../../Functional/Home";
 import CarDetail from "../../Functional/CarDetail";
 import AllCarsSection from "../../Functional/AllCarsSection";
-import PurchaseForm from "../../Functional/PurchaseForm";
 
 const root = css({
   display: "flex",
@@ -44,7 +43,6 @@ export default function Main() {
             <Route path="/" element={<Home />} />
             <Route path="/detalle/:carId" element={<CarDetail />} />
             <Route path="/catalogo" element={<AllCarsSection />} />
-            <Route path="/financiamiento" element={<PurchaseForm />} />
           </Routes>
         </Grid>
       </Grid>
