@@ -41,7 +41,7 @@ export default function PurchaseForm() {
               label="Nombre Completo"
               value={fullName}
               variant="standard"
-              inputProps={{ inputMode: "text", pattern: "/^[A-Za-z]+$/i" }}
+              inputProps={{ inputMode: "text", pattern: "[A-Za-zs]+" }}
               fullWidth
               onChange={(event) => setFullName(event.target.value)}
             />
@@ -80,7 +80,7 @@ export default function PurchaseForm() {
               <Input
                 value={phone}
                 onChange={(event) => setPhone(event.target.value)}
-                inputProps={{ inputMode: "numeric", pattern: "[0-9]*" }}
+                inputProps={{ inputMode: "numeric", pattern: "[0-9]{8}" }}
                 startAdornment={
                   <InputAdornment position="start">+569</InputAdornment>
                 }
