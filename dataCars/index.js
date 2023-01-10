@@ -103,6 +103,15 @@ const celerio4 = require("img/cars/suzukiCelerio/suzuki_celerio_lateral_front_le
 const celerio5 = require("img/cars/suzukiCelerio/suzuki_celerio_motor.webp");
 const celerio6 = require("img/cars/suzukiCelerio/suzuki_celerio_pilot.webp");
 
+const grand1 = require("img/cars/hyundaiGrandi10/hyundai_grandi10_cover.webp");
+const grand2 = require("img/cars/hyundaiGrandi10/hyundai_grandi10_lateral_back_left.webp");
+const grand3 = require("img/cars/hyundaiGrandi10/hyundai_grandi10_lateral_front_left.webp");
+const grand4 = require("img/cars/hyundaiGrandi10/hyundai_grandi10_lateral_back_right.webp");
+const grand5 = require("img/cars/hyundaiGrandi10/hyundai_grandi10_interior.webp");
+const grand6 = require("img/cars/hyundaiGrandi10/hyundai_grandi10_copilot_seat.webp");
+const grand7 = require("img/cars/hyundaiGrandi10/hyundai_grandi10_central_panel.webp");
+const grand8 = require("img/cars/hyundaiGrandi10/hyundai_grandi10_central_panel2.webp");
+
 exports.dataCars = [
   {
     id: 1,
@@ -397,7 +406,7 @@ exports.dataCars = [
     keys: 2,
     description:
       "Descubre el poder del Peugeot 208, un auto de estilo urbano que te ofrece la economía de un motor diésel de alto rendimiento. Su diseño de fuerte personalidad, se expresa en su silueta baja, curvas atractivas, capó largo y, sin duda, en los brillantes colores de su carrocería. Pura audacia y garra.",
-    status: "available",
+    status: "sold",
   },
   {
     id: 11,
@@ -417,7 +426,28 @@ exports.dataCars = [
     type: "HB",
     keys: 2,
     description:
-      "Si buscar un auto urbano, económico y con un diseño moderno, el Suzuki Celerio es el auto perfecto para ti. Con un rendimiento excepcional este modelo te permitirá ahorrar en combustible y disfrutar de un auto cómodo y seguro.",
+      "Si buscas un auto urbano, económico y con un diseño moderno, el Suzuki Celerio es el auto perfecto para ti. Con un rendimiento excepcional este modelo te permitirá ahorrar en combustible y disfrutar de un auto cómodo y seguro.",
+    status: "available",
+  },
+  {
+    id: 12,
+    photos: [grand1, grand2, grand3, grand4, grand5, grand6, grand7, grand8],
+    name: "Hyundai Grand I10",
+    year: 2022,
+    brand: "Hyundai",
+    model: "Grand i10",
+    version: "Value",
+    owners: 1,
+    price: 9680000,
+    mileage: 10600,
+    fuel: "Bencina",
+    transmission: "Manual",
+    seats: 5,
+    doors: 5,
+    type: "HB",
+    keys: 2,
+    description:
+      "El Grand i10 de Hyundai entrega múltiples funciones que responden a cada una de sus expectativas. El color de la cabina, las texturas y la forma, le entregan una apariencia superior y espaciosa, que lo harán la envidia de cualquier auto. Asiento delantero y trasero Los asientos delanteros son espaciosos y acolchados, los apoyacabezas ajustables, entregan soporte y comodidad.",
     status: "available",
   },
 ];
