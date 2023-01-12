@@ -12,12 +12,11 @@ import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper";
 
 // import car offer images
-const offer1 = require("img/backgrounds/offer1.webp");
-const offer2 = require("img/backgrounds/offer2.webp");
-const offer3 = require("img/backgrounds/offer3.webp");
-const offer4 = require("img/backgrounds/offer4.webp");
+const offer6 = require("img/backgrounds/offer6.webp");
+const offer7 = require("img/backgrounds/offer7.webp");
+const offer8 = require("img/backgrounds/offer8.webp");
 
-const carOfferImages = [offer1, offer2, offer3, offer4];
+const carOfferImages = [offer8, offer6, offer7];
 
 export default function SliderPrincipal() {
   return (
