@@ -88,6 +88,30 @@ const sswift5 = require("img/cars/suzukiSwiftgl/suzuki_swift_gl_sport_lateral_fr
 const sswift6 = require("img/cars/suzukiSwiftgl/suzuki_swift_gl_sport_lateral_front_right.webp");
 const sswift7 = require("img/cars/suzukiSwiftgl/suzuki_swift_gl_sport_passenger_seat_right.webp");
 
+const peugeot1 = require("img/cars/peugeot208/peugeot_208_cover.webp");
+const peugeot2 = require("img/cars/peugeot208/peugeot_208_back.webp");
+const peugeot3 = require("img/cars/peugeot208/peugeot_208_central_panel.webp");
+const peugeot4 = require("img/cars/peugeot208/peugeot_208_copilot_seat.webp");
+const peugeot5 = require("img/cars/peugeot208/peugeot_208_lateral_back_left.webp");
+const peugeot6 = require("img/cars/peugeot208/peugeot_208_lateral_front_left.webp");
+const peugeot7 = require("img/cars/peugeot208/peugeot_208_pilot.webp");
+
+const celerio1 = require("img/cars/suzukiCelerio/suzuki_celerio_cover.webp");
+const celerio2 = require("img/cars/suzukiCelerio/suzuki_celerio_lateral_back_left.webp");
+const celerio3 = require("img/cars/suzukiCelerio/suzuki_celerio_lateral_back_right.webp");
+const celerio4 = require("img/cars/suzukiCelerio/suzuki_celerio_lateral_front_left.webp");
+const celerio5 = require("img/cars/suzukiCelerio/suzuki_celerio_motor.webp");
+const celerio6 = require("img/cars/suzukiCelerio/suzuki_celerio_pilot.webp");
+
+const grand1 = require("img/cars/hyundaiGrandi10/hyundai_grandi10_cover.webp");
+const grand2 = require("img/cars/hyundaiGrandi10/hyundai_grandi10_lateral_back_left.webp");
+const grand3 = require("img/cars/hyundaiGrandi10/hyundai_grandi10_lateral_front_left.webp");
+const grand4 = require("img/cars/hyundaiGrandi10/hyundai_grandi10_lateral_back_right.webp");
+const grand5 = require("img/cars/hyundaiGrandi10/hyundai_grandi10_interior.webp");
+const grand6 = require("img/cars/hyundaiGrandi10/hyundai_grandi10_copilot_seat.webp");
+const grand7 = require("img/cars/hyundaiGrandi10/hyundai_grandi10_central_panel.webp");
+const grand8 = require("img/cars/hyundaiGrandi10/hyundai_grandi10_central_panel2.webp");
+
 exports.dataCars = [
   {
     id: 1,
@@ -225,7 +249,7 @@ exports.dataCars = [
     keys: 2,
     description:
       "Este Sedán jamás te fallará. Amplio espacio interior que destaca por su comodidad, la seguridad y la confianza que se siente al volante. Un modelo clásico para tiempos modernos.",
-    status: "available",
+    status: "sold",
   },
   {
     id: 5,
@@ -282,7 +306,7 @@ exports.dataCars = [
     keys: 1,
     description:
       "¿Buscar economía y rendimiento?, El Suzuki Alto es perfecto para ti. Un citycar heredero de exitosas generaciones denominadas a lo largo de la historia como Fronte, Alto, o Maruti pero diferenciándose por la cilindrada, el nivel de equipamiento, las dimensiones y la capacidad de ocupantes, la que alcanza a los 5 pasajeros.",
-    status: "available",
+    status: "sold",
   },
   {
     id: 7,
@@ -311,7 +335,7 @@ exports.dataCars = [
     keys: 2,
     description:
       "El Suzuki Alto 800 GLX AC es un citycar que se caracteriza por su bajo consumo de combustible, su bajo nivel de emisiones de CO2 y su bajo precio. El Alto 800 GLX AC es un vehículo de 3 puertas, con 5 plazas y un maletero de 185 litros. Considerado como el auto más barato de Chile, no te pierdas la oportunidad de tener un auto del año a un excelente precio.",
-    status: "available",
+    status: "sold",
   },
   // {
   //   id: 8,
@@ -354,5 +378,76 @@ exports.dataCars = [
     description:
       "¿Buscas un modelo deportivo para moverte en la ciudad, a un precio accesible?, Conoce el Suzuki Swift Gl Sport, la combinación perfecta entre un citycar y un deportivo.",
     status: "sold",
+  },
+  {
+    id: 10,
+    photos: [
+      peugeot1,
+      peugeot2,
+      peugeot3,
+      peugeot4,
+      peugeot5,
+      peugeot6,
+      peugeot7,
+    ],
+    name: "Peugeot 208 Active",
+    year: 2019,
+    brand: "Peugeot",
+    model: "208",
+    version: "Active 1.5",
+    owners: 2,
+    price: 10490000,
+    mileage: 86160,
+    fuel: "Diesel",
+    transmission: "Manual",
+    seats: 5,
+    doors: 5,
+    type: "HB",
+    keys: 2,
+    description:
+      "Descubre el poder del Peugeot 208, un auto de estilo urbano que te ofrece la economía de un motor diésel de alto rendimiento. Su diseño de fuerte personalidad, se expresa en su silueta baja, curvas atractivas, capó largo y, sin duda, en los brillantes colores de su carrocería. Pura audacia y garra.",
+    status: "sold",
+  },
+  {
+    id: 11,
+    photos: [celerio1, celerio2, celerio3, celerio4, celerio5, celerio6],
+    name: "Suzuki Celerio",
+    year: 2015,
+    brand: "Suzuki",
+    model: "Celerio",
+    version: "1.0 AT",
+    owners: 1,
+    price: 6990000,
+    mileage: 124000,
+    fuel: "Bencina",
+    transmission: "Automático",
+    seats: 5,
+    doors: 5,
+    type: "HB",
+    keys: 2,
+    description:
+      "Si buscas un auto urbano, económico y con un diseño moderno, el Suzuki Celerio es el auto perfecto para ti. Con un rendimiento excepcional este modelo te permitirá ahorrar en combustible y disfrutar de un auto cómodo y seguro.",
+    status: "available",
+  },
+  {
+    id: 12,
+    photos: [grand1, grand2, grand3, grand4, grand5, grand6, grand7, grand8],
+    name: "Hyundai Grand I10",
+    year: 2022,
+    brand: "Hyundai",
+    model: "Grand i10",
+    version: "Value",
+    owners: 1,
+    price: 9680000,
+    mileage: 10600,
+    fuel: "Bencina",
+    transmission: "Manual",
+    seats: 5,
+    doors: 5,
+    type: "HB",
+    keys: 2,
+    description:
+      "El Grand i10 de Hyundai entrega múltiples funciones que responden a cada una de sus expectativas. El color de la cabina, las texturas y la forma, le entregan una apariencia superior y espaciosa, que lo harán la envidia de cualquier auto. Asiento delantero y trasero Los asientos delanteros son espaciosos y acolchados, los apoyacabezas ajustables, entregan soporte y comodidad.",
+    status: "available",
   },
 ];
