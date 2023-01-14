@@ -436,7 +436,7 @@ exports.dataCars = [
     year: 2022,
     brand: "Hyundai",
     model: "Grand i10",
-    version: "Value",
+    version: "Plus",
     owners: 1,
     price: 9680000,
     mileage: 10600,
