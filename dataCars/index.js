@@ -112,6 +112,14 @@ const grand6 = require("img/cars/hyundaiGrandi10/hyundai_grandi10_copilot_seat.w
 const grand7 = require("img/cars/hyundaiGrandi10/hyundai_grandi10_central_panel.webp");
 const grand8 = require("img/cars/hyundaiGrandi10/hyundai_grandi10_central_panel2.webp");
 
+const volks1 = require("img/cars/volkswagenGol/volkswagen_gol_cover.webp");
+const volks2 = require("img/cars/volkswagenGol/volkswagen_gol_copilot_seat.webp");
+const volks3 = require("img/cars/volkswagenGol/volkswagen_gol_inside.webp");
+const volks4 = require("img/cars/volkswagenGol/volkswagen_gol_lateral_back_rigth.webp");
+const volks5 = require("img/cars/volkswagenGol/volkswagen_gol_lateral_front_left.webp");
+const volks6 = require("img/cars/volkswagenGol/volkswagen_gol_panel.webp");
+const volks7 = require("img/cars/volkswagenGol/volkswagen_gol_passenger_seat.webp");
+
 exports.dataCars = [
   {
     id: 1,
@@ -449,5 +457,26 @@ exports.dataCars = [
     description:
       "El Grand i10 de Hyundai entrega múltiples funciones que responden a cada una de sus expectativas. El color de la cabina, las texturas y la forma, le entregan una apariencia superior y espaciosa, que lo harán la envidia de cualquier auto. Asiento delantero y trasero Los asientos delanteros son espaciosos y acolchados, los apoyacabezas ajustables, entregan soporte y comodidad.",
     status: "available",
+  },
+  {
+    id: 13,
+    photos: [volks1, volks2, volks3, volks4, volks5, volks6, volks7],
+    name: "Volkswagen Gol Highline",
+    year: 2019,
+    brand: "Volkswagen",
+    model: "Gol",
+    version: "Highline 1.6",
+    owners: 1,
+    price: 8790000,
+    mileage: 36500,
+    fuel: "Bencina",
+    transmission: "Manual",
+    seats: 5,
+    doors: 5,
+    type: "HB",
+    keys: 2,
+    description:
+      "Que tu primer auto no sea cualquiera. Gol, es un auto versátil, con estilo y seguro. Cuenta con airbags y frenos ABS de serie, además de aire acondicionado y volante multifunción. Este hatchback compacto ha sido una opción confiable y asequible para muchos conductores durante décadas y es una tremenda opción para tu primer auto.",
+    status: "sold",
   },
 ];
