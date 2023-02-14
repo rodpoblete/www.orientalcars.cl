@@ -120,6 +120,54 @@ const volks5 = require("img/cars/volkswagenGol/volkswagen_gol_lateral_front_left
 const volks6 = require("img/cars/volkswagenGol/volkswagen_gol_panel.webp");
 const volks7 = require("img/cars/volkswagenGol/volkswagen_gol_passenger_seat.webp");
 
+const altoglx1 = require("img/cars/suzukiAltoGlx800/suzuki_alto_glx_cover.webp");
+const altoglx2 = require("img/cars/suzukiAltoGlx800/suzuki_alto_glx_central_panel.webp");
+const altoglx3 = require("img/cars/suzukiAltoGlx800/suzuki_alto_glx_copilot_seat.webp");
+const altoglx4 = require("img/cars/suzukiAltoGlx800/suzuki_alto_glx_lateral_back_right.webp");
+const altoglx5 = require("img/cars/suzukiAltoGlx800/suzuki_alto_glx_lateral_front_right.webp");
+const altoglx6 = require("img/cars/suzukiAltoGlx800/suzuki_alto_glx_odometer.webp");
+const altoglx7 = require("img/cars/suzukiAltoGlx800/suzuki_alto_glx_panoramic_inside.webp");
+
+const ssyoung1 = require("img/cars/ssangyongTivoli/ssangyong_tivoli_cover.webp");
+const ssyoung2 = require("img/cars/ssangyongTivoli/ssangyong_tivoli_central_panel.webp");
+const ssyoung3 = require("img/cars/ssangyongTivoli/ssangyong_tivoli_copilot_seat.webp");
+const ssyoung4 = require("img/cars/ssangyongTivoli/ssangyong_tivoli_lateral_back_left.webp");
+const ssyoung5 = require("img/cars/ssangyongTivoli/ssangyong_tivoli_lateral_back_right.webp");
+const ssyoung6 = require("img/cars/ssangyongTivoli/ssangyong_tivoli_lateral_front_right.webp");
+const ssyoung7 = require("img/cars/ssangyongTivoli/ssangyong_tivoli_lateral_wheel.webp");
+const ssyoung8 = require("img/cars/ssangyongTivoli/ssangyong_tivoli_odometer.webp");
+const ssyoung9 = require("img/cars/ssangyongTivoli/ssangyong_tivoli_panoramic_inside.webp");
+
+const mg1 = require("img/cars/mgNew3Confort/mg_new_3_confort_cover.webp");
+const mg2 = require("img/cars/mgNew3Confort/mg_new_3_confort_camera.webp");
+const mg3 = require("img/cars/mgNew3Confort/mg_new_3_confort_central_panel.webp");
+const mg4 = require("img/cars/mgNew3Confort/mg_new_3_confort_copilot_seat.webp");
+const mg5 = require("img/cars/mgNew3Confort/mg_new_3_confort_lateral_back_left.webp");
+const mg6 = require("img/cars/mgNew3Confort/mg_new_3_confort_lateral_front_right.webp");
+const mg7 = require("img/cars/mgNew3Confort/mg_new_3_confort_lateral_wheel.webp");
+const mg8 = require("img/cars/mgNew3Confort/mg_new_3_confort_odometer.webp");
+const mg9 = require("img/cars/mgNew3Confort/mg_new_3_confort_panoramic_inside.webp");
+const mg10 = require("img/cars/mgNew3Confort/mg_new_3_confort_passenger_seats.webp");
+
+const sparkGt1 = require("img/cars/chevroletSparkGt/chevrolet_spark_gt_cover.webp");
+const sparkGt2 = require("img/cars/chevroletSparkGt/chevrolet_spark_gt_central_panel_2.webp");
+const sparkGt3 = require("img/cars/chevroletSparkGt/chevrolet_spark_gt_central_panel.webp");
+const sparkGt4 = require("img/cars/chevroletSparkGt/chevrolet_spark_gt_copilot_seat.webp");
+const sparkGt5 = require("img/cars/chevroletSparkGt/chevrolet_spark_gt_lateral_front_right.webp");
+const sparkGt6 = require("img/cars/chevroletSparkGt/chevrolet_spark_gt_odometer.webp");
+const sparkGt7 = require("img/cars/chevroletSparkGt/chevrolet_spark_gt_panoramic_inside.webp");
+const sparkGt8 = require("img/cars/chevroletSparkGt/chevrolet_spark_gt_passenger_seat.webp");
+
+const baicx351 = require("img/cars/baicX35Luxury/baic_x35_cover.webp");
+const baicx352 = require("img/cars/baicX35Luxury/baic_x35_roof_proff.webp");
+const baicx353 = require("img/cars/baicX35Luxury/baic_x35_central_panel.webp");
+const baicx354 = require("img/cars/baicX35Luxury/baic_x35_copilot_seat.webp");
+const baicx355 = require("img/cars/baicX35Luxury/baic_x35_lateral_back_left.webp");
+const baicx356 = require("img/cars/baicX35Luxury/baic_x35_lateral_back_right.webp");
+const baicx357 = require("img/cars/baicX35Luxury/baic_x35_lateral_front_right.webp");
+const baicx358 = require("img/cars/baicX35Luxury/baic_x35_odometer.webp");
+const baicx359 = require("img/cars/baicX35Luxury/baic_x35_panoramic_inside.webp");
+
 exports.dataCars = [
   {
     id: 1,
@@ -456,7 +504,7 @@ exports.dataCars = [
     keys: 2,
     description:
       "El Grand i10 de Hyundai entrega múltiples funciones que responden a cada una de sus expectativas. El color de la cabina, las texturas y la forma, le entregan una apariencia superior y espaciosa, que lo harán la envidia de cualquier auto. Asiento delantero y trasero Los asientos delanteros son espaciosos y acolchados, los apoyacabezas ajustables, entregan soporte y comodidad.",
-    status: "available",
+    status: "sold",
   },
   {
     id: 13,
@@ -478,5 +526,147 @@ exports.dataCars = [
     description:
       "Que tu primer auto no sea cualquiera. Gol, es un auto versátil, con estilo y seguro. Cuenta con airbags y frenos ABS de serie, además de aire acondicionado y volante multifunción. Este hatchback compacto ha sido una opción confiable y asequible para muchos conductores durante décadas y es una tremenda opción para tu primer auto.",
     status: "sold",
+  },
+  {
+    id: 14,
+    photos: [
+      sparkGt1,
+      sparkGt2,
+      sparkGt3,
+      sparkGt4,
+      sparkGt5,
+      sparkGt6,
+      sparkGt7,
+      sparkGt8,
+    ],
+    name: "Chevrolet Spark GT",
+    year: 2020,
+    brand: "Chevrolet",
+    model: "Spark GT",
+    version: "1.2 AC",
+    owners: 3,
+    price: 7790000,
+    mileage: 73000,
+    fuel: "Bencina",
+    transmission: "Manual",
+    seats: 5,
+    doors: 5,
+    type: "HB",
+    keys: 2,
+    description:
+      "El nuevo Chevrolet Spark GT, cuenta con un motor de 1.2 litros con 80.5 caballos de potencia que ofrece un excelente desempeño con un bajo       consumo de combustible. Esto hace que se mueva con facilidad en la ciudad y también permite una adecuada respuesta en carretera.",
+    status: "available",
+  },
+  {
+    id: 15,
+    photos: [
+      baicx351,
+      baicx352,
+      baicx353,
+      baicx354,
+      baicx355,
+      baicx356,
+      baicx357,
+      baicx358,
+      baicx359,
+    ],
+    name: "Baic X35 Luxury",
+    year: 2022,
+    brand: "Baic",
+    model: "X35",
+    version: "Luxury 1.5",
+    owners: 1,
+    price: 10990000,
+    mileage: 12000,
+    fuel: "Bencina",
+    transmission: "Manual",
+    seats: 5,
+    doors: 5,
+    type: "SUV",
+    keys: 2,
+    description:
+      "El nuevo Baic X35 viene con un aspecto completamente renovado, presentando un frontal más grande que las generaciones anteriores. Luces LED, llantas de aleación, espejos regulables electrónicamentes, amplia conexión y tecnología de gama alta.",
+    status: "sold",
+  },
+  {
+    id: 16,
+    photos: [mg1, mg2, mg3, mg4, mg5, mg6, mg7, mg8, mg9, mg10],
+    name: "MG New 3 Confort",
+    year: 2019,
+    brand: "MG",
+    model: "New 3",
+    version: "Confort 1.5",
+    owners: 1,
+    price: 7790000,
+    mileage: 49900,
+    fuel: "Bencina",
+    transmission: "Manual",
+    seats: 5,
+    doors: 5,
+    type: "HB",
+    keys: 2,
+    description:
+      "MG 3 es un hatchback con un look deportivo y alto nivel de equipamiento hecho para que vivas todas tus aventuras.Tiene un diseño aerodinámico y parrilla frontal distintiva muy distintiva, luces LED delanteras llamadas «London Eye», contando con mayor distancia de irradiación.",
+    status: "sold",
+  },
+  {
+    id: 17,
+    photos: [
+      altoglx1,
+      altoglx2,
+      altoglx3,
+      altoglx4,
+      altoglx5,
+      altoglx6,
+      altoglx7,
+    ],
+    name: "Suzuki Alto GLX",
+    year: 2021,
+    brand: "Suzuki",
+    model: "Alto",
+    version: "GLX 800",
+    owners: 1,
+    price: 6690000,
+    mileage: 19000,
+    fuel: "Bencina",
+    transmission: "Manual",
+    seats: 5,
+    doors: 5,
+    type: "HB",
+    keys: 2,
+    description:
+      "Funcionalidad, potencia y bajo consumo se fusionan en un poderoso motor de 800 cc, ideal para la ciudad, la carretera y el transporte cotidiano de ejecutivos. Las familias pequeñas, parejas, estudiantes, trabajadores ejecutivos y una amplia gama de conductores prefieren al Suzuki Alto por ser una adquisición muy económica y conveniente.",
+    status: "available",
+  },
+  {
+    id: 18,
+    photos: [
+      ssyoung1,
+      ssyoung2,
+      ssyoung3,
+      ssyoung4,
+      ssyoung5,
+      ssyoung6,
+      ssyoung7,
+      ssyoung8,
+      ssyoung9,
+    ],
+    name: "SSangyoung Tivoli",
+    year: 2021,
+    brand: "SSangyoung",
+    model: "Tivoli",
+    version: "Limited 1.6",
+    owners: 1,
+    price: 17500000,
+    mileage: 14000,
+    fuel: "Bencina",
+    transmission: "Automático",
+    seats: 5,
+    doors: 5,
+    type: "SUV",
+    keys: 2,
+    description:
+      "Enamórate del diseño y estilo único de Tivoli, el crossover ideal para quienes disfrutan los detalles y la tecnología y la aventura en su vida cotidiana. Gracias a el diseño y la tecnología del Tivoli podrás aprovechar al máximo de toda una experiencia a la hora de conducir.",
+    status: "available",
   },
 ];
