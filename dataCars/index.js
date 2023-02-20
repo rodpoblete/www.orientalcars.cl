@@ -168,6 +168,16 @@ const baicx357 = require("img/cars/baicX35Luxury/baic_x35_lateral_front_right.we
 const baicx358 = require("img/cars/baicX35Luxury/baic_x35_odometer.webp");
 const baicx359 = require("img/cars/baicX35Luxury/baic_x35_panoramic_inside.webp");
 
+const spark1 = require("img/cars/chevroletSpark/chevrolet_spark_cover.webp");
+const spark2 = require("img/cars/chevroletSpark/chevrolet_spark_front_right.webp");
+const spark3 = require("img/cars/chevroletSpark/chevrolet_spark_lateral_back_left.webp");
+const spark4 = require("img/cars/chevroletSpark/chevrolet_spark_lateral_back_right.webp");
+const spark5 = require("img/cars/chevroletSpark/chevrolet_spark_odometer.webp");
+const spark6 = require("img/cars/chevroletSpark/chevrolet_spark_panel.webp");
+const spark7 = require("img/cars/chevroletSpark/chevrolet_spark_copilot_seat.webp");
+const spark8 = require("img/cars/chevroletSpark/chevrolet_spark_panoramic_inside.webp");
+const spark9 = require("img/cars/chevroletSpark/chevrolet_spark_passenger_seat.webp");
+
 exports.dataCars = [
   {
     id: 1,
@@ -483,7 +493,7 @@ exports.dataCars = [
     keys: 2,
     description:
       "Si buscas un auto urbano, económico y con un diseño moderno, el Suzuki Celerio es el auto perfecto para ti. Con un rendimiento excepcional este modelo te permitirá ahorrar en combustible y disfrutar de un auto cómodo y seguro.",
-    status: "available",
+    status: "sold",
   },
   {
     id: 12,
@@ -667,6 +677,37 @@ exports.dataCars = [
     keys: 2,
     description:
       "Enamórate del diseño y estilo único de Tivoli, el crossover ideal para quienes disfrutan los detalles y la tecnología y la aventura en su vida cotidiana. Gracias a el diseño y la tecnología del Tivoli podrás aprovechar al máximo de toda una experiencia a la hora de conducir.",
+    status: "available",
+  },
+  {
+    id: 19,
+    photos: [
+      spark1,
+      spark2,
+      spark3,
+      spark4,
+      spark5,
+      spark6,
+      spark7,
+      spark8,
+      spark9,
+    ],
+    name: "Chevrolet Spark",
+    year: 2015,
+    brand: "Chevrolet",
+    model: "Spark",
+    version: "1.2 LT",
+    owners: 1,
+    price: 5990000,
+    mileage: 118000,
+    fuel: "Bencina",
+    transmission: "Automático",
+    seats: 5,
+    doors: 5,
+    type: "HB",
+    keys: 2,
+    description:
+      "El Chevrolet Spark es un auto compacto capaz de desplazarse con agilidad por los abarrotados centros de la ciudad, este modelo se convierte en una alternativa funcional, divertida y muy económica de conducir.",
     status: "available",
   },
 ];
