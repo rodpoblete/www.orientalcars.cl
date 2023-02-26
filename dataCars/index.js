@@ -565,7 +565,7 @@ exports.dataCars = [
     keys: 2,
     description:
       "El nuevo Chevrolet Spark GT, cuenta con un motor de 1.2 litros con 80.5 caballos de potencia que ofrece un excelente desempeño con un bajo       consumo de combustible. Esto hace que se mueva con facilidad en la ciudad y también permite una adecuada respuesta en carretera.",
-    status: "available",
+    status: "sold",
   },
   {
     id: 15,
@@ -646,7 +646,7 @@ exports.dataCars = [
     keys: 2,
     description:
       "Funcionalidad, potencia y bajo consumo se fusionan en un poderoso motor de 800 cc, ideal para la ciudad, la carretera y el transporte cotidiano de ejecutivos. Las familias pequeñas, parejas, estudiantes, trabajadores ejecutivos y una amplia gama de conductores prefieren al Suzuki Alto por ser una adquisición muy económica y conveniente.",
-    status: "available",
+    status: "sold",
   },
   {
     id: 18,
@@ -708,6 +708,6 @@ exports.dataCars = [
     keys: 2,
     description:
       "El Chevrolet Spark es un auto compacto capaz de desplazarse con agilidad por los abarrotados centros de la ciudad, este modelo se convierte en una alternativa funcional, divertida y muy económica de conducir.",
-    status: "available",
+    status: "sold",
   },
 ];
