@@ -178,6 +178,27 @@ const spark7 = require("img/cars/chevroletSpark/chevrolet_spark_copilot_seat.web
 const spark8 = require("img/cars/chevroletSpark/chevrolet_spark_panoramic_inside.webp");
 const spark9 = require("img/cars/chevroletSpark/chevrolet_spark_passenger_seat.webp");
 
+const i101 = require("img/cars/grandI10Value/i10_cover.webp");
+const i102 = require("img/cars/grandI10Value/i10_back_left.webp");
+const i103 = require("img/cars/grandI10Value/i10_back_right.webp");
+const i104 = require("img/cars/grandI10Value/i10_copilot.webp");
+const i105 = require("img/cars/grandI10Value/i10_front_right.webp");
+const i106 = require("img/cars/grandI10Value/i10_odometer.webp");
+const i107 = require("img/cars/grandI10Value/i10_panel.webp");
+const i108 = require("img/cars/grandI10Value/i10_panoramic.webp");
+const i109 = require("img/cars/grandI10Value/i10_passenger.webp");
+const i1010 = require("img/cars/grandI10Value/i10_wheel.webp");
+
+const mg31 = require("img/cars/mgNew3/mg3_new_cover.webp");
+const mg32 = require("img/cars/mgNew3/mg3_new_copilot.webp");
+const mg33 = require("img/cars/mgNew3/mg3_new_lateral_back_left.webp");
+const mg34 = require("img/cars/mgNew3/mg3_new_lateral_back_right.webp");
+const mg35 = require("img/cars/mgNew3/mg3_new_lateral_front_left.webp");
+const mg36 = require("img/cars/mgNew3/mg3_new_odometer.webp");
+const mg37 = require("img/cars/mgNew3/mg3_new_panoramic.webp");
+const mg38 = require("img/cars/mgNew3/mg3_new_passenger.webp");
+const mg39 = require("img/cars/mgNew3/mg3_new_radio.webp");
+
 exports.dataCars = [
   {
     id: 1,
@@ -565,7 +586,7 @@ exports.dataCars = [
     keys: 2,
     description:
       "El nuevo Chevrolet Spark GT, cuenta con un motor de 1.2 litros con 80.5 caballos de potencia que ofrece un excelente desempeño con un bajo       consumo de combustible. Esto hace que se mueva con facilidad en la ciudad y también permite una adecuada respuesta en carretera.",
-    status: "available",
+    status: "sold",
   },
   {
     id: 15,
@@ -646,7 +667,7 @@ exports.dataCars = [
     keys: 2,
     description:
       "Funcionalidad, potencia y bajo consumo se fusionan en un poderoso motor de 800 cc, ideal para la ciudad, la carretera y el transporte cotidiano de ejecutivos. Las familias pequeñas, parejas, estudiantes, trabajadores ejecutivos y una amplia gama de conductores prefieren al Suzuki Alto por ser una adquisición muy económica y conveniente.",
-    status: "available",
+    status: "sold",
   },
   {
     id: 18,
@@ -708,6 +729,48 @@ exports.dataCars = [
     keys: 2,
     description:
       "El Chevrolet Spark es un auto compacto capaz de desplazarse con agilidad por los abarrotados centros de la ciudad, este modelo se convierte en una alternativa funcional, divertida y muy económica de conducir.",
+    status: "sold",
+  },
+  {
+    id: 20,
+    photos: [i101, i102, i103, i104, i105, i106, i107, i108, i109, i1010],
+    name: "Hyundai Grand i10",
+    year: 2022,
+    brand: "Hyundai",
+    model: "Grand i10",
+    version: "VALUE 1.2",
+    owners: 1,
+    price: 9990000,
+    mileage: 9300,
+    fuel: "Bencina",
+    transmission: "Manual",
+    seats: 5,
+    doors: 5,
+    type: "HB",
+    keys: 2,
+    description:
+      "¿Buscas un auto económico, cómodo y seguro? El Hyundai Grand i10 2022 versión value es la opción ideal para ti. Este auto tiene un motor de 1.2 litros con inyección multipunto y doble árbol de levas con sincronización de válvulas continuamente variable1, que te ofrece un rendimiento óptimo y una conducción suave. Además, cuenta con ajuste de espejos retrovisores eléctricos y calefaccionados, botón de encendido con llave inteligente3, aire acondicionado, radio con pantalla táctil de 8 pulgadas, conexión Bluetooth y USB, doble airbag frontal y frenos ABS. Todo esto por un precio increíble.",
     status: "available",
+  },
+  {
+    id: 21,
+    photos: [mg31, mg32, mg33, mg34, mg35, mg36, mg37, mg38, mg39],
+    name: "MG New 3",
+    year: 2016,
+    brand: "MG",
+    model: "New 3",
+    version: "1.5",
+    owners: 2,
+    price: 6490000,
+    mileage: 47963,
+    fuel: "Bencina",
+    transmission: "Manual",
+    seats: 5,
+    doors: 5,
+    type: "HB",
+    keys: 2,
+    description:
+      "¿Quieres un auto con estilo, rendimiento y seguridad? El MG New 3 versión 1.5 año 2016 es la opción ideal para ti. Este auto tiene un motor de 1.5 litros con transmisión manual, que te ofrece una potencia de 110 HP y un torque de 135 Nm. Además, cuenta con doble airbag frontal1, frenos ABS con EBD1, anclajes ISOFIX y sensor de retroceso, bluetooth, aire acondicionado y pack eléctrico. Todo esto por un precio increíble. No esperes más y cotiza con nosotros.",
+    status: "sold",
   },
 ];
