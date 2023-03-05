@@ -13,10 +13,9 @@ import { Pagination, Navigation, Autoplay } from "swiper";
 
 // import car offer images
 const offerSummer = require("img/backgrounds/offerWallpaper.webp");
-const offer9 = require("img/backgrounds/offer9.webp");
 const offer10 = require("img/backgrounds/offer10.webp");
 
-const carOfferImages = [offerSummer, offer9, offer10];
+const carOfferImages = [offerSummer, offer10];
 
 export default function SliderPrincipal() {
   return (
