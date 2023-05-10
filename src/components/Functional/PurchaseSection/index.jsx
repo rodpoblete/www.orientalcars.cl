@@ -2,6 +2,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import { Typography } from "@mui/material";
 import Button from "@mui/material/Button";
+import { Link as RouterLink } from "react-router-dom";
 
 const salesWallpaper = require("img/backgrounds/salesWallpaper.webp");
 
@@ -96,8 +97,10 @@ export default function PurchaseSection() {
         independientes.
       </Typography>
       <Button
+        component={RouterLink}
         variant="contained"
         color="secondary"
+        to="/financiamiento"
         sx={{ visibility: "hidden" }}
       >
         Más Información
